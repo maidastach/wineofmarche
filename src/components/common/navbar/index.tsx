@@ -12,6 +12,7 @@ const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 5;
 
   .logo-container {
     display: flex;
