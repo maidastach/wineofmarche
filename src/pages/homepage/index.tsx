@@ -1,3 +1,5 @@
+import { Hero } from "./components/Hero";
+
 export const HomepageScreen = () => {
-  return <div>index</div>;
+  return <Hero />;
 };
