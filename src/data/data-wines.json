@@ -1,0 +1,245 @@
+[
+  {
+    "name": "ISOLA",
+    "type": "Verdicchio dei Castelli di Jesi DOP",
+    "image": "",
+    "specs": [
+      {
+        "label": "Grape",
+        "data": "Verdicchio 100%"
+      },
+      {
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      {
+        "label": "Yield per hectare",
+        "data": "70 q"
+      },
+      {
+        "label": "Grape harvest period",
+        "data": "Last decade of September"
+      },
+      {
+        "label": "Vinification and wine aging",
+        "data": "The bunch of grapes gets softly and quickly pressed what permits to obtain 40% of must. The fermentation occurs at controlled temperature of 16°C. The wine againg in steel basins lasts 14 months. It takes place on noble wine lees which are mixed up with periodical batonnage."
+      }
+    ]
+  },
+  {
+    "name": "OPERE",
+    "type": "Verdicchio dei Castelli di Jesi DOP",
+    "image": "",
+    "specs": [
+      {
+        "label": "Grape",
+        "data": "Verdicchio 100%"
+      },
+      {
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      {
+        "label": "Yield per hectare",
+        "data": "100 q"
+      },
+      {
+        "label": "Grape harvest period",
+        "data": "First decade of September"
+      },
+      {
+        "label": "Vinification and wine aging",
+        "data": "The fermentation occurs at controlled temperature of 16°C. The wine againg in stainless steel tanl lasts 4 months and it is made on noble wine lees which are mixed up with periodical batonnage."
+      }
+    ]
+  },
+  {
+    "name": "FLORA",
+    "type": "Marche Bianco IGP",
+    "image": "",
+    "specs": [
+      {
+        "label": "Grape",
+        "data": "Verdicchio 60%, Malvasia 20%, Biancame 20%"
+      },
+      {
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      {
+        "label": "Yield per hectare",
+        "data": "100 q"
+      },
+      {
+        "label": "Grape harvest period",
+        "data": "Second decade of September"
+      },
+      {
+        "label": "Vinification and wine aging",
+        "data": "The bunch of grapes gets softly and quickly pressed what permits to obtain 40% of must. The fermentation occurs at controlled temperature of 16°C. The wine aging in steel basins lasts 5 months. It takes place on noble wine lees which are mixed up with periodical batonnage."
+      }
+    ]
+  },
+  {
+    "name": "URBANO",
+    "type": "Marche Rosso IGP",
+    "image": "",
+    "specs": [
+      {
+        "label": "Grape",
+        "data": "Merlot, Cabernet Sauvignon, Montepulciano (the grape percentage depends on the yearly grape harvest)"
+      },
+      {
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      {
+        "label": "Yield per hectare",
+        "data": "60 q"
+      },
+      {
+        "label": "Grape harvest period",
+        "data": "First decade of October"
+      },
+      {
+        "label": "Vinification and wine aging",
+        "data": "The fermentation of destemmed grapes occurs at controlled temperature of 25°C and a soaking period of 30 days. The wine ages in barrique for about 12 months and afterwards in bottles for 6 months."
+      }
+    ]
+  },
+  {
+    "name": "SUONO",
+    "type": "Rosso Piceno DOP",
+    "image": "",
+    "specs": [
+      {
+        "label": "Grape",
+        "data": "Montepulciano 70%, Sangiovese 30%"
+      },
+      {
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      {
+        "label": "Yield per hectare",
+        "data": "60 q"
+      },
+      {
+        "label": "Grape harvest period",
+        "data": "Last decade of September"
+      },
+      {
+        "label": "Vinification and wine aging",
+        "data": "The fermentation of destemmed grapes occurs at controlled temperature of 24°C and a soaking period of 30 days. The wine ages for about 4 months in stainless steel tank and afterward in bottle for 2 months."
+      }
+    ]
+  },
+  {
+    "name": "APOLLONIA",
+    "type": "Verdicchio dei Castelli di Jesi DOP, Metodo Classico Brut Nature",
+    "image": "",
+    "specs": [
+      {
+        "label": "Grape",
+        "data": "Verdicchio 100%"
+      },
+      {
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      {
+        "label": "Yield per hectare",
+        "data": "95 q"
+      },
+      {
+        "label": "Grape harvest period",
+        "data": "Last decade of August"
+      },
+      {
+        "label": "Vinification and wine aging",
+        "data": "The bunch of grape is soflty and quickly pressed. It permits to obtain 40% of must. The fermentation occurs at controlled temperature of 16°C and the tirage occurs in the following year. The wine takes place on the noble wine lees at the least 40 months and it is sold 6 months after the degorgement."
+      }
+    ]
+  },
+  {
+    "name": "CONTATTO",
+    "type": "Verdicchio dei Castelli di Jesi DOP, Metodo Classico Brut",
+    "image": "",
+    "specs": [
+      {
+        "label": "Grape",
+        "data": "Verdicchio 100%."
+      },
+      {
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      {
+        "label": "Yield per hectare",
+        "data": "95 q"
+      },
+      {
+        "label": "Grape harvest period",
+        "data": "Last decade of August"
+      },
+      {
+        "label": "Vinification and wine aging",
+        "data": "The bunch of grape is soflty and quickly pressed. It permits to obtain 40% of must. The fermentation occurs at controlled temperature of 16°C and the tirage occurs in the following year. The wine takes place on the noble wine lees at the least 40 months and it is sold 6 months after the degorgement with the addition of liqueur d’expedition."
+      }
+    ]
+  },
+  {
+    "name": "EXTRA BRUT ROSÉ",
+    "type": "Marche IGP Rosato Spumante di Qualità, Metodo Classico Extra Brut",
+    "image": "",
+    "specs": [
+      {
+        "label": "Grape",
+        "data": "Verdicchio, Montepulciano"
+      },
+      {
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      {
+        "label": "Yield per hectare",
+        "data": "60 q"
+      },
+      {
+        "label": "Grape harvest period",
+        "data": "Last ten days of August for Verdicchio, first ten days of October for Montepulciano."
+      },
+      {
+        "label": "Vinification and wine aging",
+        "data": "Vinification and wine aging Rosé is obtained from the separate vinification of Verdicchio and Montepulciano grapes. Verdicchio grapes are vinified with the traditional-method of sparkling wine. Montepulciano grapes follow the traditional red wine vinification; as soon as the grapes are pickled, the selected bunches are transported over the vats for the 24 hours cold maceration and then fermentation. After about 7 months of maturation, the wine is carried out and bottled for the slow fermentation that lasts 36 months. The bottle-fermentation over the lees is followed by the disgorge. Rosè wine will be stored in the cellar for 4 months."
+      }
+    ]
+  },
+  {
+    "name": "CAMPO DI CUORI",
+    "type": "Vino Bianco Spumante di qualità, Metodo Classico Extra Brut",
+    "image": "",
+    "specs": [
+      {
+        "label": "Grape",
+        "data": "Verdicchio, Chardonnay, Pinot bianco"
+      },
+      {
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      {
+        "label": "Yield per hectare",
+        "data": "80 q"
+      },
+      {
+        "label": "Grape harvest period",
+        "data": "Last ten days of August"
+      },
+      {
+        "label": "Vinification and wine aging",
+        "data": "Vinification and wine aging The bunch of grape is soflty and quickly pressed. It permits to obtain 40% of must. The fermentation occurs at controlled temperature of 16°C and the tirage occurs in the following year. The wine takes place on the noble wine lees at the least 36 months and it is sold 6 months after the degorgement."
+      }
+    ]
+  }
+]
