@@ -22,7 +22,9 @@ const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
       height: auto;
     }
   }
-
+  li {
+    font-family: "Daniel";
+  }
   a {
     display: contents;
     color: black;
