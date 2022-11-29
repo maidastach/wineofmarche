@@ -6,7 +6,10 @@ interface IMaxWidthComponent {
   label: string;
 }
 
-const MaxWidthStyle = styled.div``;
+const MaxWidthStyle = styled.div`
+  max-width: 1280px;
+  margin: auto;
+`;
 
 export const MaxWidthComponent = ({ children, label }: IMaxWidthComponent) => {
   return (
