@@ -1,0 +1,26 @@
+[
+  {
+    "label": "HOME",
+    "url": "/"
+  },
+  {
+    "label": "WINES",
+    "url": "/#wine-photos"
+  },
+  {
+    "label": "SPECS",
+    "url": "#wine-specs"
+  },
+  {
+    "label": "STATS",
+    "url": "/#stats"
+  },
+  {
+    "label": "NEWS",
+    "url": "#wine-specs"
+  },
+  {
+    "label": "CONTACTS",
+    "url": "/#stats"
+  }
+]
