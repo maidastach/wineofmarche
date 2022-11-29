@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { App } from "./App";
-import { ErrorPage } from "./components/common/ErrorPage";
-import { WinepageScreen } from "./components/winepage";
+import { ErrorPage } from "./pages/errorpage";
+import { WinepageScreen } from "./pages/winepage";
 import { Layout } from "./components/common/Layout";
+import { HomepageScreen } from "./pages/homepage";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />,
+        element: <HomepageScreen />,
       },
       {
         path: "/wines/:id",
