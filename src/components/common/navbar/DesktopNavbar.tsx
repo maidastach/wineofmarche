@@ -15,26 +15,33 @@ const DesktopNavbarStyle = styled.nav.attrs({
     .nav-links {
       font-size: 14px;
       line-height: 1.5em;
-      color: #737272;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       font-weight: 400;
+      a {
+        color: black;
+      }
     }
   }
 
   @media only screen and (min-width: 1280px) {
     .nav-links {
       font-size: 28px;
+      a.isHomepage {
+        color: white;
+      }
     }
   }
 `;
 
-export const DesktopNavbar = () => {
+export const DesktopNavbar = ({ navbarClass }: { navbarClass: string }) => {
   return (
     <DesktopNavbarStyle>
       {navListItems.map(({ label, url }) => (
         <li className="nav-links" key={label}>
-          <Link to={url}>{label}</Link>
+          <Link className={navbarClass} to={url}>
+            {label}
+          </Link>
         </li>
       ))}
     </DesktopNavbarStyle>

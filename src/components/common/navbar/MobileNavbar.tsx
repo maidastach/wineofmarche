@@ -52,10 +52,12 @@ const MobileNavbarStyle = styled.nav.attrs({
       li {
         font-size: 28px;
         line-height: 1.5em;
-        color: #737272;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         font-weight: 400;
+        a {
+          color: black;
+        }
       }
     }
   }
