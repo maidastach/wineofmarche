@@ -4,7 +4,7 @@ import heropic from "../../../assets/images/heropic.webp";
 
 const HeroStyle = styled.div.attrs({ className: "hero-container" })`
   display: flex;
-  min-height: 70vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -44,6 +44,7 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
 
   @media only screen and (min-width: 768px) {
     align-items: flex-end;
+    min-height: 90vh;
 
     .background {
       background-size: 100% 100%;
