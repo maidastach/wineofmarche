@@ -26,6 +26,7 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
     gap: 1.5rem;
     p {
       font-size: 12px;
+      margin-bottom: 0;
     }
 
     .col {
@@ -128,9 +129,13 @@ export const Footer = () => {
         </div>
         <div className="col-2 col">
           <div className="contact-container">
-            <p>1-677-124-44227</p>
-            <p>184 Main Collins Street Victoria 807</p>
+            <p>0434004360</p>
+            <p>
+              U7/19 Ralston st, <br />
+              Lane Cove north. 2066 NSW
+            </p>
             <p>info@wineofmarche.au</p>
+            <p>sales@wineofmarche.au</p>
             <p>www.wineofmarche.au</p>
           </div>
           <div className="socials-container">
@@ -158,7 +163,7 @@ export const Footer = () => {
       </MaxWidthComponent>
       <div className="footer-copyright">
         <hr />
-        <p> © 2022: Wine of Marche - ABN 23212343243</p>
+        <p> © 2022: Wine of Marche - ABN 95662077625</p>
       </div>
     </FooterStyle>
   );
