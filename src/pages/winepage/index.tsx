@@ -10,6 +10,7 @@ const WinePageStyle = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   gap: 6rem;
+  padding-bottom: 3rem;
 
   .wine-container {
     display: grid;
@@ -109,7 +110,7 @@ const WinePageStyle = styled.section`
   }
 
   @media only screen and (min-width: 1280px) {
-    padding-block: 3rem;
+    padding-top: 3rem;
     margin-top: 6rem;
     .wine-container {
       .wine-specs {

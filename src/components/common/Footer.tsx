@@ -80,6 +80,12 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
         grid-template-columns: 1fr 1fr;
       }
     }
+
+    .footer-copyright {
+      p {
+        font-size: 14px;
+      }
+    }
   }
 
   @media only screen and (min-width: 940px) {
