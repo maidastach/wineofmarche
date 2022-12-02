@@ -9,16 +9,16 @@ import { HomepageScreen } from "./pages/homepage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/*",
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <HomepageScreen />,
       },
       {
-        path: "/wines/:id",
+        path: "wines/:id",
         element: <WinepageScreen />,
       },
       {
