@@ -21,9 +21,6 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-color: saddlebrown; */
-    /* background-blend-mode: lighten; */
-    /* filter: blur(3px); */
   }
   .overlay {
     height: 100%;
@@ -33,10 +30,7 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
     left: 0;
     z-index: 2;
     background: saddlebrown;
-    opacity: 0.4;
-    /* background-color: saddlebrown; */
-    /* background-blend-mode: lighten; */
-    /* filter: blur(3px); */
+    opacity: 0.2;
   }
 
   img {
@@ -46,7 +40,6 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
     height: 200px;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    /* margin-top: 7rem; */
   }
 
   @media only screen and (min-width: 768px) {
