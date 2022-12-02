@@ -7,8 +7,6 @@ import { RelatedProducts } from "./RelatedProducts";
 import { WineCard } from "./WineCard";
 
 const WinePageStyle = styled.section`
-  margin-top: 6rem;
-  padding-block: 3rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 6rem;
@@ -34,6 +32,7 @@ const WinePageStyle = styled.section`
         letter-spacing: 0.1em;
         text-transform: uppercase;
         font-weight: 400;
+        margin-bottom: 0;
       }
     }
     .wine-images {
@@ -69,6 +68,7 @@ const WinePageStyle = styled.section`
       display: grid;
       grid-template-columns: 1fr;
       gap: 1rem;
+      margin-top: 4rem;
       h3,
       p {
         margin-top: 0;
@@ -109,6 +109,8 @@ const WinePageStyle = styled.section`
   }
 
   @media only screen and (min-width: 1280px) {
+    padding-block: 3rem;
+    margin-top: 6rem;
     .wine-container {
       .wine-specs {
         h2 {
@@ -120,6 +122,7 @@ const WinePageStyle = styled.section`
       }
 
       .wine-description {
+        margin-top: 0;
         h3 {
           font-size: 30px;
         }
