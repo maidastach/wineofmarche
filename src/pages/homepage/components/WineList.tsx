@@ -1,28 +1,9 @@
 import styled from "styled-components";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import winelist from "../../../data/data-wines.json";
-import apollonia from "../../../assets/images/wines/apollonia.png";
-import campodicuori from "../../../assets/images/wines/campodicuori.png";
-import contatto from "../../../assets/images/wines/contatto.png";
-import extrabrutrose from "../../../assets/images/wines/extrabrutrose.png";
-import flora from "../../../assets/images/wines/flora.png";
-import isola from "../../../assets/images/wines/isola.png";
-import opere from "../../../assets/images/wines/opere.png";
-import suono from "../../../assets/images/wines/suono.png";
-import urbano from "../../../assets/images/wines/urbano.png";
-
-const imagesOfWines = [
-  isola,
-  opere,
-  flora,
-  urbano,
-  suono,
-  apollonia,
-  contatto,
-  extrabrutrose,
-  campodicuori,
-];
+import { imagesOfWines } from "../../../data/data-wine-images";
+import { Link } from "react-router-dom";
 
 const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
   padding: 4rem 1rem;
@@ -36,6 +17,10 @@ const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
     -webkit-box-align: center;
     gap: 2rem;
     min-height: 400px;
+
+    a {
+      display: contents;
+    }
 
     .wine-img-container {
       position: relative;
@@ -115,7 +100,7 @@ export const WineList = () => {
   }, []);
 
   return (
-    <WineListStyle>
+    <WineListStyle id="wines-list">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -125,16 +110,24 @@ export const WineList = () => {
         className="wines-motion-wrapper"
         ref={winesContainerRef}
       >
-        {winelist.map(({ name, type }, idx) => (
-          <div key={name} className={`wine-img-container ${name}-container`}>
-            <img src={imagesOfWines[idx]} alt={name} />
-            <div className="wine-overlay">
-              <h2>{name}</h2>
-              {type.split(",").map((t) => (
-                <p>{t}</p>
-              ))}
+        {winelist.map(({ id, name, type }, idx) => (
+          <Link key={id} to={`/wines/${id}`}>
+            <div key={name} className={`wine-img-container ${name}-container`}>
+              <img
+                src={
+                  imagesOfWines.find((w) => w.id === id)?.image ||
+                  imagesOfWines[idx].image
+                }
+                alt={name}
+              />
+              <div className="wine-overlay">
+                <h2>{name}</h2>
+                {type.split(",").map((t) => (
+                  <p key={t}>{t}</p>
+                ))}
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </motion.div>
     </WineListStyle>

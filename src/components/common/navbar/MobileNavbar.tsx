@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 import navListItems from "./data-links.json";
 import burgermenu from "../../../assets/icons/burgermenu.png";
@@ -48,6 +48,15 @@ const MobileNavbarStyle = styled.nav.attrs({
       flex-direction: column;
       gap: 2rem;
       margin-bottom: 10rem;
+
+      li {
+        font-size: 28px;
+        line-height: 1.5em;
+        color: #737272;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
     }
   }
 

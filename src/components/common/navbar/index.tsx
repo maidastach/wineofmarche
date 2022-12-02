@@ -23,11 +23,20 @@ const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
     }
   }
   li {
-    font-family: "Daniel";
+    font-family: "Cinzel";
   }
   a {
     display: contents;
     color: black;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .logo-container {
+      img {
+        width: 350px;
+        height: auto;
+      }
+    }
   }
 `;
 
