@@ -7,7 +7,8 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
   min-height: 70vh;
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: flex-end;
   position: relative;
 
   .background {
@@ -17,8 +18,24 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
     top: 0;
     left: 0;
     background-image: url(${heropic});
-    background-color: saddlebrown;
-    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: saddlebrown; */
+    /* background-blend-mode: lighten; */
+    /* filter: blur(3px); */
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: saddlebrown;
+    opacity: 0.4;
+    /* background-color: saddlebrown; */
+    /* background-blend-mode: lighten; */
     /* filter: blur(3px); */
   }
 
@@ -27,17 +44,23 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
     z-index: 2;
     width: 200px;
     height: 200px;
-    margin-left: 1rem;
-    margin-top: 7rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    /* margin-top: 7rem; */
   }
 
   @media only screen and (min-width: 768px) {
-    align-items: center;
+    align-items: flex-end;
+
+    .background {
+      background-size: 100% 100%;
+    }
 
     img {
       width: 350px;
       height: 350px;
-      margin-left: 3rem;
+      margin-right: 3rem;
+      margin-bottom: 3rem;
       margin-top: unset;
     }
   }
@@ -47,6 +70,7 @@ export const Hero = () => {
   return (
     <HeroStyle>
       <div className="background"></div>
+      <div className="overlay"></div>
       <img src={logopic} alt="wine-logo" />
     </HeroStyle>
   );
