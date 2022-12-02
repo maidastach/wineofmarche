@@ -73,6 +73,9 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
     .footer-max-width {
       gap: 2rem;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      p {
+        font-size: 14px;
+      }
       .col-4 {
         grid-template-columns: 1fr 1fr;
       }
@@ -85,6 +88,19 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
       .col-4 {
         gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .footer-max-width {
+      p {
+        font-size: 18px;
+      }
+      .col-1 {
+        img {
+          width: 350px;
+          margin-left: -0.75rem;
+        }
       }
     }
   }
