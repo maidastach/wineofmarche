@@ -2,20 +2,36 @@ import styled from "styled-components";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import winelist from "../../../data/data-wines.json";
+import imageWineBG from "../../../assets/images/wines-list.jpg";
 import { imagesOfWines } from "../../../data/data-wine-images";
 import { Link } from "react-router-dom";
 
 const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
-  padding: 4rem 1rem;
-  background-color: #ababab;
+  padding: 4rem 2rem;
+  background: url(${imageWineBG}) center/cover no-repeat;
   cursor: grab;
   overflow: hidden;
-  box-shadow: 0px -6px 13px -2px #626262;
+  box-shadow: 3.8px -7.5px 7.5px hsl(0deg 0% 0% / 0.38);
+  min-height: 550px;
+  position: relative;
+
+  h2.section-title {
+    font-family: Cinzel;
+    font-size: 35px;
+    line-height: 1.5em;
+    text-align: left;
+    color: #575555;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 4rem;
+  }
 
   .wines-motion-wrapper {
     display: -webkit-box;
     -webkit-box-align: center;
-    gap: 2rem;
+    gap: 3rem;
     min-height: 400px;
 
     a {
@@ -30,51 +46,57 @@ const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
       align-items: center;
       width: 250px;
       height: 330px;
-      border: 3px solid #ca9317;
+      border: 3px solid #b59f00;
       border-radius: 25px;
       box-shadow: 3px 2px 8px 4px grey;
-      transition: 0.2s linear;
+      transition: 0.3s linear;
+
+      &:hover {
+        margin-inline: 3rem;
+      }
 
       &:hover .wine-overlay {
-        opacity: 0.5;
+        opacity: 1;
         z-index: 1;
       }
 
       &:hover img {
-        transform: scale(1.3);
+        transform: scale(1.2) translateX(60px);
       }
       &:hover {
-        width: 350px;
-        height: 380px;
+        transform: scale(1.5);
       }
 
       .wine-overlay {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 10px;
         z-index: -1;
         opacity: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 100%;
+        width: 60%;
         height: 100%;
-        background-color: black;
         border-radius: 20px;
-        transition: 1s ease;
-        color: white;
-        text-align: center;
+        transition: 0.5s ease;
+        text-align: start;
 
         h2 {
           font-family: "Daniel";
-          min-height: 70px;
+          color: #847400;
           margin-top: 2rem;
           width: 90%;
+          font-size: 20px;
+          margin-bottom: 0;
         }
         p {
           width: 90%;
           margin-bottom: 0;
+          font-size: 14px;
+          color: #575555;
+          font-family: Cinzel;
         }
       }
 
@@ -101,6 +123,7 @@ export const WineList = () => {
 
   return (
     <WineListStyle id="wines-list">
+      <h2 className="section-title">OUR WINES</h2>
       <motion.div
         drag="x"
         dragConstraints={{
@@ -111,8 +134,8 @@ export const WineList = () => {
         ref={winesContainerRef}
       >
         {winelist.map(({ id, name, type }, idx) => (
-          <Link key={id} to={`/wines/${id}`}>
-            <div key={name} className={`wine-img-container ${name}-container`}>
+          <div key={name} className={`wine-img-container ${name}-container`}>
+            <Link to={`/wines/${id}`}>
               <img
                 src={
                   imagesOfWines.find((w) => w.id === id)?.image ||
@@ -122,12 +145,10 @@ export const WineList = () => {
               />
               <div className="wine-overlay">
                 <h2>{name}</h2>
-                {type.split(",").map((t) => (
-                  <p key={t}>{t}</p>
-                ))}
+                <p>{type.split(",")[0]}</p>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         ))}
       </motion.div>
     </WineListStyle>
