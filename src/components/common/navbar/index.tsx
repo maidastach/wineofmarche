@@ -4,6 +4,7 @@ import { MobileNavbar } from "./MobileNavbar";
 import { DesktopNavbar } from "./DesktopNavbar";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { winetitle } from "../colors";
 
 const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
   display: flex;
@@ -12,6 +13,9 @@ const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
   width: 100%;
   padding: 2rem 0;
   position: relative;
+  a {
+    display: contents;
+  }
 
   .overlay {
     display: none;
@@ -23,15 +27,24 @@ const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
     img {
       width: 200px;
       height: auto;
+      position: relative;
+      z-index: 11;
     }
   }
-  li {
-    font-family: "Cinzel";
+  .nav-links {
     position: relative;
     z-index: 3;
-  }
-  a {
-    display: contents;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    a {
+      color: black;
+      transition: 0.5s ease;
+      &:hover {
+        color: ${winetitle};
+      }
+    }
   }
 
   @media only screen and (min-width: 1280px) {

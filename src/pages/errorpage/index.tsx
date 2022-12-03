@@ -6,8 +6,7 @@ const ErrorPageStyle = styled.div.attrs({ className: "error-page" })`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 60vh;
+  height: 70vh;
 `;
 
 export const ErrorPage = () => {
