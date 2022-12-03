@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logopic from "../../../assets/images/logopic.png";
+// import logopic from "../../../assets/images/logopic.png";
 import heropic from "../../../assets/images/heropic.webp";
 
 const HeroStyle = styled.div.attrs({ className: "hero-container" })`
@@ -65,7 +65,7 @@ export const Hero = () => {
     <HeroStyle>
       <div className="background"></div>
       <div className="overlay"></div>
-      <img src={logopic} alt="wine-logo" />
+      {/* <img src={logopic} alt="wine-logo" /> */}
     </HeroStyle>
   );
 };

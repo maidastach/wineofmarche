@@ -2,6 +2,7 @@ import styled from "styled-components";
 import winelist from "../../data/data-wines.json";
 import { imagesOfWines } from "../../data/data-wine-images";
 import { Link } from "react-router-dom";
+import { greyDescription, winetitle } from "../../components/common/colors";
 
 const RelatedProductsStyle = styled.div.attrs({
   className: "related-products",
@@ -11,15 +12,14 @@ const RelatedProductsStyle = styled.div.attrs({
   flex-direction: column;
 
   h2 {
-    font-family: Cinzel;
     font-size: 28px;
     line-height: 1.5em;
     text-align: left;
-    color: black;
+    color: ${greyDescription};
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-weight: 400;
-    margin: 0;
+    margin-top: 0;
   }
 
   .wines-container {
@@ -40,12 +40,16 @@ const RelatedProductsStyle = styled.div.attrs({
         height: 280px;
         object-fit: cover;
         object-position: bottom;
+        transition: 0.75s all;
+
+        &:hover {
+          object-position: center;
+        }
       }
 
       h3,
       p {
         margin: 0;
-        font-family: Cinzel, serif;
         font-weight: 400;
         line-height: 1.03em;
         letter-spacing: 0.2em;
@@ -54,13 +58,15 @@ const RelatedProductsStyle = styled.div.attrs({
 
       h3 {
         font-size: 20px;
-        text-transform: uppercase;
-        color: #282727;
+        color: ${winetitle};
+        font-family: Daniel;
+        margin-top: 0.5rem;
       }
 
       p {
-        color: #737272;
+        color: ${greyDescription};
         font-size: 13px;
+        font-weight: 600;
       }
     }
   }

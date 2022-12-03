@@ -14,13 +14,6 @@ const DesktopNavbarStyle = styled.nav.attrs({
 
     .nav-links {
       font-size: 14px;
-      line-height: 1.5em;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      font-weight: 400;
-      a {
-        color: black;
-      }
     }
   }
 

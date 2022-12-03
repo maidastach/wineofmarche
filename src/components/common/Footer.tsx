@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import logotext from "../../assets/images/logotext.png";
+import { imagesOfWines } from "../../data/data-wine-images";
 import { MaxWidthComponent } from "./MaxWidthComponent";
 
-const TEMP_IMG =
-  "https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/195221406_302688341510813_7183047526141179114_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=vbHCWhNWTfQAX8HBNTk&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCjG-pQWipx5duePoqFrIkDpTomDuUOROkRrmeGNzUjIQ&oe=638A0087";
+const TEMP_IMG = imagesOfWines[0].image;
 
 const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
   display: flex;
@@ -45,10 +45,12 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
     .col-4 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 2rem;
-      row-gap: 1rem;
+      column-gap: 3rem;
+      row-gap: 2rem;
       img {
         width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
       }
     }
   }
@@ -65,7 +67,7 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
     .footer-max-width {
       .col-4 {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
+        gap: 2rem;
       }
     }
   }
@@ -91,11 +93,18 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
 
   @media only screen and (min-width: 940px) {
     .footer-max-width {
-      gap: 4rem;
       .col-4 {
         gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr;
+        img {
+          aspect-ratio: 1 / 2;
+        }
       }
+    }
+  }
+  @media only screen and (min-width: 1050px) {
+    .footer-max-width {
+      gap: 4rem;
     }
   }
   @media only screen and (min-width: 1280px) {

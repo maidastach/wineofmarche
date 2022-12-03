@@ -1,6 +1,7 @@
 import { Navigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import { greyDescription, winetitle } from "../../components/common/colors";
 import { MaxWidthComponent } from "../../components/common/MaxWidthComponent";
 import winelist from "../../data/data-wines.json";
 import { RelatedProducts } from "./RelatedProducts";
@@ -25,11 +26,10 @@ const WinePageStyle = styled.section`
     .wine-header {
       grid-area: header;
       h1 {
-        font-family: Cinzel;
         font-size: 28px;
         line-height: 1.5em;
         text-align: left;
-        color: #737272;
+        color: ${greyDescription};
         letter-spacing: 0.1em;
         text-transform: uppercase;
         font-weight: 400;
@@ -46,8 +46,6 @@ const WinePageStyle = styled.section`
       p {
         margin-top: 0;
         margin-bottom: 0.5rem;
-
-        font-family: Cinzel, serif;
         font-weight: 400;
         line-height: 1.03em;
         letter-spacing: 0.2em;
@@ -55,13 +53,14 @@ const WinePageStyle = styled.section`
 
       h2 {
         font-size: 35px;
-        text-transform: uppercase;
-        color: #282727;
+        color: ${winetitle};
+        font-family: Daniel;
       }
 
       p {
-        color: #737272;
+        color: ${greyDescription};
         font-size: 20px;
+        font-weight: 600;
       }
     }
     .wine-description {
@@ -74,18 +73,18 @@ const WinePageStyle = styled.section`
       p {
         margin-top: 0;
         margin-bottom: 0.5rem;
-        font-family: Cinzel, serif;
       }
 
       h3 {
         font-size: 20px;
         letter-spacing: 0.15em;
-        color: #282727;
+        /* color: #282727; */
         font-weight: bold;
+        color: ${winetitle};
       }
 
       p {
-        color: #737272;
+        color: ${greyDescription};
         font-size: 15px;
         font-weight: 600;
       }

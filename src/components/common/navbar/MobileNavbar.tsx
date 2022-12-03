@@ -17,12 +17,12 @@ const MobileNavbarStyle = styled.nav.attrs({
     filter: invert(0.7);
     position: relative;
     z-index: 12;
-    transition: 0.4s cubic-bezier(0.6, -0.28, 0.74, 0.05) all;
+    transition: 0.4s ease all;
     cursor: pointer;
   }
 
   .navigation-body {
-    transition: 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05) all;
+    transition: 0.4s ease all;
     width: 100vw;
     height: 100vh;
     background: beige;
@@ -49,15 +49,8 @@ const MobileNavbarStyle = styled.nav.attrs({
       gap: 2rem;
       margin-bottom: 10rem;
 
-      li {
+      .nav-links {
         font-size: 28px;
-        line-height: 1.5em;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        font-weight: 400;
-        a {
-          color: black;
-        }
       }
     }
   }
