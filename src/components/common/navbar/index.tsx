@@ -4,7 +4,7 @@ import { MobileNavbar } from "./MobileNavbar";
 import { DesktopNavbar } from "./DesktopNavbar";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { winetitle } from "../colors";
+import { winetitleHover } from "../colors";
 
 const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
   display: flex;
@@ -42,7 +42,7 @@ const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
       color: black;
       transition: 0.5s ease;
       &:hover {
-        color: ${winetitle};
+        color: ${winetitleHover};
       }
     }
   }
