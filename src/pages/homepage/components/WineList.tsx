@@ -110,6 +110,10 @@ const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
       }
     }
   }
+
+  @media only screen and (min-width: 1280px) {
+    padding-inline: 4rem;
+  }
 `;
 
 export const WineList = () => {

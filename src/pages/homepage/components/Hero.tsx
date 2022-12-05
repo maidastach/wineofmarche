@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import logopic from "../../../assets/images/logopic.png";
-import heropic from "../../../assets/images/heropic.webp";
+// import heropic from "../../../assets/images/heropic.webp";
+import heropic from "../../../assets/images/hero3.jpeg";
 
 const HeroStyle = styled.div.attrs({ className: "hero-container" })`
   display: flex;
@@ -22,7 +23,7 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
     background-position: center;
     background-repeat: no-repeat;
   }
-  .overlay {
+  /* .overlay {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -31,16 +32,16 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
     z-index: 2;
     background: saddlebrown;
     opacity: 0.2;
-  }
+  } */
 
-  img {
+  /* img {
     position: relative;
     z-index: 2;
     width: 200px;
     height: 200px;
     margin-right: 1rem;
     margin-bottom: 1rem;
-  }
+  } */
 
   @media only screen and (min-width: 768px) {
     align-items: flex-end;
@@ -50,13 +51,13 @@ const HeroStyle = styled.div.attrs({ className: "hero-container" })`
       background-size: 100% 100%;
     }
 
-    img {
+    /* img {
       width: 350px;
       height: 350px;
       margin-right: 3rem;
       margin-bottom: 3rem;
       margin-top: unset;
-    }
+    } */
   }
 `;
 
@@ -64,7 +65,7 @@ export const Hero = () => {
   return (
     <HeroStyle>
       <div className="background"></div>
-      <div className="overlay"></div>
+      {/* <div className="overlay"></div> */}
       {/* <img src={logopic} alt="wine-logo" /> */}
     </HeroStyle>
   );
