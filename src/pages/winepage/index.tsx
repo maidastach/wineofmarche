@@ -15,9 +15,23 @@ import wineBgPic from "../../assets/images/winebg.jpg";
 const WinePageStyle = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-  gap: 6rem;
-  padding-bottom: 3rem;
-  padding-top: 2rem;
+  gap: 1rem;
+  /* padding-top: 2rem; */
+
+  .winepage-content {
+    padding-bottom: 3rem;
+    background-image: url(${wineBgPic});
+    background-color: #000000b0;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .max-width-component {
+      margin-top: 3rem;
+      padding-inline: 2rem;
+    }
+  }
 
   .wine-container {
     display: grid;
@@ -34,7 +48,7 @@ const WinePageStyle = styled.section`
       h1 {
         font-size: 20px;
         text-align: left;
-        color: ${winelisthp};
+        color: white;
       }
     }
     .wine-images {
@@ -54,12 +68,12 @@ const WinePageStyle = styled.section`
 
       h2 {
         font-size: 30px;
-        color: ${winetitle};
+        color: #ffe000;
         font-family: Daniel;
       }
 
       p {
-        color: ${greyDescription};
+        color: white;
         font-size: 14px;
         font-weight: 600;
       }
@@ -78,11 +92,11 @@ const WinePageStyle = styled.section`
 
       h3 {
         font-size: 16px;
-        color: ${winetitle};
+        color: #ffe000;
       }
 
       p {
-        color: ${greyDescription};
+        color: white;
         font-size: 13px;
       }
     }
@@ -110,7 +124,14 @@ const WinePageStyle = styled.section`
   }
 
   @media only screen and (min-width: 1280px) {
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
+
+    .winepage-content {
+      .max-width-component {
+        margin-top: 8rem;
+        padding-inline: 4rem;
+      }
+    }
     .wine-container {
       .wine-images {
         img {
@@ -152,9 +173,11 @@ export const WinepageScreen = () => {
 
   return (
     <WinePageStyle className={`winepage-container ${wineId}`}>
-      <MaxWidthComponent label={wineId}>
-        <WineCard wine={wine} />
-      </MaxWidthComponent>
+      <div className="winepage-content">
+        <MaxWidthComponent label={wineId}>
+          <WineCard wine={wine} />
+        </MaxWidthComponent>
+      </div>
       <RelatedProducts idToNotDisplay={id} />
     </WinePageStyle>
   );
