@@ -7,8 +7,6 @@ const CustomButtonStyle = styled(Button)`
     border-color: ${winetitle};
     padding: 15px 25px;
     font-family: Cinzel;
-
-    /* font-size: 16px; */
     line-height: 1.5em;
     letter-spacing: 0.1em;
     font-weight: 400;

@@ -1,24 +1,15 @@
 import styled from "styled-components";
 import { MaxWidthComponent } from "../../../components/common/MaxWidthComponent";
 import aboutusPic from "../../../assets/images/about-us.jpg";
-import { winetitleHover } from "../../../components/common/colors";
-const AboutUsStyle = styled.div.attrs({ className: "aboutus-container" })`
-  position: relative;
-  display: flex;
-  flex-direction: column;
+import { sectiontitleLighter } from "../../../components/common/colors";
+
+const AboutUsStyle = styled.div.attrs({
+  className: "aboutus-container container",
+})`
   gap: 2rem;
-  min-height: 500px;
-  padding: 4rem 2rem;
-  box-shadow: 3.8px -7.5px 7.5px hsl(0deg 0% 0% / 0.38);
 
   h2.section-title {
-    font-size: 35px;
-    line-height: 1.5em;
-    text-align: left;
-    color: ${winetitleHover};
-    letter-spacing: 0.1em;
-    font-weight: 400;
-    margin: 0;
+    color: ${sectiontitleLighter};
   }
 
   img.about-us-background {
@@ -33,30 +24,23 @@ const AboutUsStyle = styled.div.attrs({ className: "aboutus-container" })`
 
   p.about-us-text-content {
     color: white;
-    font-size: 16px;
-    line-height: 1.5em;
+    font-size: 14px;
     text-align: justify;
-    letter-spacing: 0.1em;
-    font-weight: 400;
-    margin: 0;
-  }
-
-  @media only screen and (min-width: 768px) {
-    p.about-us-text-content {
-      font-size: 23px;
-    }
   }
 
   @media only screen and (min-width: 1280px) {
-    padding-inline: 4rem;
+    gap: 4rem;
+    p.about-us-text-content {
+      font-size: 20px;
+    }
   }
 `;
 
 export const AboutUs = () => {
   return (
-    <AboutUsStyle>
+    <AboutUsStyle id="about-us">
       <img className="about-us-background" src={aboutusPic} alt="About Us" />
-      <h2 className="section-title">ABOUT US</h2>
+      <h2 className="section-title">About Us</h2>
       <MaxWidthComponent label="about-us">
         <p className="about-us-text-content">
           Wine of Marche is an Italian wine import company. <br />
@@ -64,10 +48,12 @@ export const AboutUs = () => {
           others. It’s in the Italian DNA to enjoy all those little things in
           life, especially when we are together.
           <br />
+          <br />
           We are honoured to showcase our beautiful region of Marche, the land
           of medieval castles, gentle hills, snowy mountains and breathtaking
           coastlines : a truly amazing region, home of many artists, poets and
           writers from our history.  <br />
+          <br />
           We took it upon ourselves to present to the world the beauty of Marche
           starting from its wines and the passions of our winemakers, the same
           passion that has been passed down for generations!

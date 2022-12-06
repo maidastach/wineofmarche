@@ -1,26 +1,18 @@
 [
   {
-    "label": "HOME",
+    "label": "Home",
     "url": "/"
   },
   {
-    "label": "WINES",
+    "label": "Wines",
     "url": "/#wines-list"
   },
   {
-    "label": "SPECS",
-    "url": "#wine-specs"
+    "label": "About Us",
+    "url": "/#about-us"
   },
   {
-    "label": "STATS",
-    "url": "/#stats"
-  },
-  {
-    "label": "NEWS",
-    "url": "#wine-specs"
-  },
-  {
-    "label": "CONTACTS",
-    "url": "/#stats"
+    "label": "Contact Us",
+    "url": "/#contact-us"
   }
 ]

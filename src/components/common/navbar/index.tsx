@@ -4,18 +4,14 @@ import { MobileNavbar } from "./MobileNavbar";
 import { DesktopNavbar } from "./DesktopNavbar";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { winetitleHover } from "../colors";
+import { winelisthp, winetitle } from "../colors";
 
 const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  padding: 2rem 0;
+  justify-content: space-between;
+  padding: 2rem;
   position: relative;
-  a {
-    display: contents;
-  }
 
   .overlay {
     display: none;
@@ -29,6 +25,7 @@ const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
       height: auto;
       position: relative;
       z-index: 11;
+      margin-left: -1rem;
     }
   }
   .nav-links {
@@ -36,32 +33,37 @@ const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
     z-index: 3;
     line-height: 1.5em;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     font-weight: 400;
     a {
-      color: black;
+      color: ${winelisthp};
       transition: 0.5s ease;
       &:hover {
-        color: ${winetitleHover};
+        color: ${winetitle};
       }
     }
   }
 
+  @media only screen and (min-width: 768px) {
+    padding: 1rem 2rem;
+  }
   @media only screen and (min-width: 1280px) {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
+    width: 100%;
+    padding-inline: 0;
+    justify-content: space-around;
 
     .overlay.isHomepage {
       display: block;
       width: 100%;
-      height: 80%;
+      height: 100%;
       position: absolute;
       top: 0;
       left: 0;
       background: black;
-      opacity: 0.3;
+      opacity: 0.4;
     }
 
     .logo-container {

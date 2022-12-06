@@ -35,4 +35,45 @@ ul {
 
 a {
   text-decoration: none;
+  display: contents;
+}
+
+.container {
+  padding: 3rem 2rem 4rem;
+  overflow: hidden;
+  box-shadow: 3.8px -7.5px 7.5px hsl(0deg 0% 0% / 0.38);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+h2.section-title {
+  font-size: 30px;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+p {
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 4rem 4rem 6rem;
+  }
+  h2.section-title {
+    font-size: 35px;
+  }
 }

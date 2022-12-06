@@ -1,8 +1,8 @@
+import { Hero } from "./components/Hero";
+import { WineList } from "./components/WineList";
 import { AboutUs } from "./components/AboutUs";
 import { ContactUs } from "./components/ContactUs";
-import { Hero } from "./components/Hero";
-import { MapRenderer } from "./components/MapRenderer";
-import { WineList } from "./components/WineList";
+import { Experience } from "./components/Experience";
 
 export const HomepageScreen = () => {
   return (
@@ -11,7 +11,7 @@ export const HomepageScreen = () => {
       <WineList />
       <AboutUs />
       <ContactUs />
-      <MapRenderer />
+      <Experience />
     </section>
   );
 };

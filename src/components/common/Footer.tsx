@@ -1,9 +1,16 @@
 import styled from "styled-components";
 import logotext from "../../assets/images/logotext.png";
-import { imagesOfWines } from "../../data/data-wine-images";
+import { winelisthp, winetitle } from "./colors";
 import { MaxWidthComponent } from "./MaxWidthComponent";
-
-const TEMP_IMG = imagesOfWines[0].image;
+import { HashLink as Link } from "react-router-hash-link";
+import footerPic1 from "../../assets/images/footer/footer1.jpg";
+import footerPic2 from "../../assets/images/footer/footer2.jpg";
+import footerPic3 from "../../assets/images/footer/footer3.jpg";
+import footerPic4 from "../../assets/images/footer/footer4.jpg";
+import footerPic5 from "../../assets/images/footer/footer5.jpg";
+import footerPic6 from "../../assets/images/footer/footer6.jpg";
+import instagramIcon from "../../assets/icons/instagram.png";
+import dataLinks from "./navbar/data-links.json";
 
 const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
   display: flex;
@@ -11,7 +18,7 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
   background-color: #383230;
   padding: 4rem 2rem 1rem;
   color: white;
-  gap: 5rem;
+  gap: 3rem;
 
   hr {
     width: 100%;
@@ -24,30 +31,60 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    font-size: 12px;
+
     p {
       font-size: 12px;
       margin-bottom: 0;
     }
-
+    img.logo-footer {
+      width: 200px;
+      filter: invert(1);
+      margin-left: -0.75rem;
+    }
     .col {
       display: grid;
+      gap: 1rem;
       align-content: space-between;
     }
 
     .col-1 {
-      img {
-        width: 200px;
-        filter: invert(1);
-        margin-left: -0.75rem;
+      li {
+        color: white;
+        width: fit-content;
+        &:hover {
+          color: ${winelisthp};
+        }
+      }
+    }
+
+    .col-2 {
+      p {
+        color: white;
+        width: fit-content;
+
+        &:hover {
+          color: ${winelisthp};
+        }
+        span {
+          margin-left: 18px;
+        }
+      }
+
+      .socials-container {
+        img {
+          width: 30px;
+          filter: invert(1);
+        }
       }
     }
 
     .col-4 {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 3rem;
-      row-gap: 2rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
       img {
+        border: 1px solid ${winetitle};
         width: 100%;
         aspect-ratio: 1 / 1;
         object-fit: cover;
@@ -65,9 +102,11 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
 
   @media only screen and (min-width: 500px) {
     .footer-max-width {
+      .col-1 {
+        width: 60%;
+      }
       .col-4 {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
       }
     }
   }
@@ -75,48 +114,40 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
   @media only screen and (min-width: 768px) {
     .footer-max-width {
       gap: 2rem;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      p {
-        font-size: 14px;
+      grid-template-columns: 1fr 1fr;
+
+      img.logo-footer {
+        grid-column: 1 / 3;
+      }
+      .col-1 {
+        width: 100%;
       }
       .col-4 {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .footer-copyright {
-      p {
-        font-size: 14px;
-      }
-    }
-  }
-
-  @media only screen and (min-width: 940px) {
-    .footer-max-width {
-      .col-4 {
-        gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr;
-        img {
-          aspect-ratio: 1 / 2;
-        }
       }
-    }
-  }
-  @media only screen and (min-width: 1050px) {
-    .footer-max-width {
-      gap: 4rem;
     }
   }
   @media only screen and (min-width: 1280px) {
     .footer-max-width {
+      grid-template-columns: 1fr 1fr 1fr;
+      img.logo-footer {
+        width: 300px;
+        margin-left: -1rem;
+      }
+      img.logo-footer {
+        grid-column: 1 / 4;
+      }
+
       p {
         font-size: 18px;
       }
-      .col-1 {
-        img {
-          width: 350px;
-          margin-left: -0.75rem;
-        }
+      .col-1 li {
+        font-size: 18px;
+      }
+    }
+    .footer-copyright {
+      p {
+        font-size: 12px;
       }
     }
   }
@@ -126,32 +157,65 @@ export const Footer = () => {
   return (
     <FooterStyle>
       <MaxWidthComponent label="footer">
+        <img className="logo-footer" src={logotext} alt="logo-text" />
         <div className="col-1 col">
-          <img src={logotext} alt="logo-text" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque.
+            Bringing exclusive Italian wine from the Marche region to the best
+            fine dining restaurant in Australia
           </p>
-          <p>
-            Quisque feugiat mattis ornare. Suspendisse sit amet dictum felis.
-            Nullam ac est id lacus, sed non mauris.
-          </p>
+          <ul>
+            {dataLinks.map(({ url, label }) => (
+              <Link to={url}>
+                <li>{label}</li>
+              </Link>
+            ))}
+          </ul>
         </div>
         <div className="col-2 col">
           <div className="contact-container">
-            <p>0434004360</p>
-            <p>
-              U7/19 Ralston st, <br />
-              Lane Cove north. 2066 NSW
-            </p>
-            <p>info@wineofmarche.au</p>
-            <p>sales@wineofmarche.au</p>
-            <p>www.wineofmarche.au</p>
+            <a href="tel:0434004360" target="_blank" rel="noreferrer">
+              <p>t: 0434004360</p>
+            </a>
+            <a
+              href="https://www.google.com/maps/place/19+Ralston+St,+Lane+Cove+North+NSW+2066+Australia"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>
+                a: U7/19 Ralston st, <br />
+                <span>Lane Cove North.</span> <br />
+                <span>2066 NSW</span>
+              </p>
+            </a>
+            <a
+              href="mailto:info@wineofmarche.au"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>e: info@wineofmarche.au</p>
+            </a>
+            <a
+              href="mailto:sales@wineofmarche.au"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>e: sales@wineofmarche.au</p>
+            </a>
+            <a href="/" target="_blank" rel="noreferrer">
+              <p>w: www.wineofmarche.au</p>
+            </a>
           </div>
           <div className="socials-container">
-            <p>1-677-124-44227</p>
+            <a
+              href="https://instagram.com/wine_of_marche"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={instagramIcon} alt="Instagram" />
+            </a>
           </div>
         </div>
-        <div className="col-3 col">
+        {/* <div className="col-3 col">
           <div className="text-above">
             <p>January 20, 2017 </p>
             <p>Etiam risus nunc, feugiat id commodo ut, laoreet in augue</p>
@@ -160,14 +224,14 @@ export const Footer = () => {
             <p>January 20, 2017 </p>
             <p>Etiam risus nunc, feugiat id commodo ut, laoreet in augue</p>
           </div>
-        </div>
+        </div> */}
         <div className="col-4 col">
-          <img src={TEMP_IMG} alt="" />
-          <img src={TEMP_IMG} alt="" />
-          <img src={TEMP_IMG} alt="" />
-          <img src={TEMP_IMG} alt="" />
-          <img src={TEMP_IMG} alt="" />
-          <img src={TEMP_IMG} alt="" />
+          <img src={footerPic1} alt="" />
+          <img src={footerPic2} alt="" />
+          <img src={footerPic3} alt="" />
+          <img src={footerPic4} alt="" />
+          <img src={footerPic5} alt="" />
+          <img src={footerPic6} alt="" />
         </div>
       </MaxWidthComponent>
       <div className="footer-copyright">
