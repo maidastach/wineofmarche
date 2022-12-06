@@ -10,15 +10,16 @@ import { MaxWidthComponent } from "../../components/common/MaxWidthComponent";
 import winelist from "../../data/data-wines.json";
 import { RelatedProducts } from "./RelatedProducts";
 import { WineCard } from "./WineCard";
+import wineBgPic from "../../assets/images/winebg.jpg";
 
 const WinePageStyle = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   gap: 6rem;
   padding-bottom: 3rem;
+  padding-top: 2rem;
 
   .wine-container {
-    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -110,7 +111,6 @@ const WinePageStyle = styled.section`
 
   @media only screen and (min-width: 1280px) {
     padding-top: 3rem;
-    margin-top: 4rem;
     .wine-container {
       .wine-images {
         img {
