@@ -3,12 +3,12 @@ import logotext from "../../assets/images/logotext.png";
 import { winelisthp, winetitle } from "./colors";
 import { MaxWidthComponent } from "./MaxWidthComponent";
 import { HashLink as Link } from "react-router-hash-link";
-import footerPic1 from "../../assets/images/footer/footer1.jpg";
-import footerPic2 from "../../assets/images/footer/footer2.jpg";
-import footerPic3 from "../../assets/images/footer/footer3.jpg";
-import footerPic4 from "../../assets/images/footer/footer4.jpg";
-import footerPic5 from "../../assets/images/footer/footer5.jpg";
-import footerPic6 from "../../assets/images/footer/footer6.jpg";
+import footerPic1 from "../../assets/images/footer/footer1.webp";
+import footerPic2 from "../../assets/images/footer/footer2.webp";
+import footerPic3 from "../../assets/images/footer/footer3.webp";
+import footerPic4 from "../../assets/images/footer/footer4.webp";
+import footerPic5 from "../../assets/images/footer/footer5.webp";
+import footerPic6 from "../../assets/images/footer/footer6.webp";
 import instagramIcon from "../../assets/icons/instagram.png";
 import dataLinks from "./navbar/data-links.json";
 

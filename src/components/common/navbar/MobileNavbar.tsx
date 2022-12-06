@@ -2,7 +2,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 import navListItems from "./data-links.json";
 import burgermenu from "../../../assets/icons/burgermenu.png";
-import logopic from "../../../assets/images/logopic.png";
+import logopic from "../../../assets/images/logopics.png";
 import closemenu from "../../../assets/icons/closemenu.png";
 import { useCallback, useState } from "react";
 
