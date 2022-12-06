@@ -15,7 +15,7 @@ import wineBgPic from "../../assets/images/winebg.jpg";
 const WinePageStyle = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-  /* gap: 1rem; */
+  gap: 1rem;
   /* padding-top: 2rem; */
 
   .winepage-content {
