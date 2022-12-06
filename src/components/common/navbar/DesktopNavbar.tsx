@@ -27,12 +27,12 @@ const DesktopNavbarStyle = styled.nav.attrs({
   }
 `;
 
-export const DesktopNavbar = ({ navbarClass }: { navbarClass: string }) => {
+export const DesktopNavbar = () => {
   return (
     <DesktopNavbarStyle>
       {navListItems.map(({ label, url }) => (
         <li className="nav-links" key={label}>
-          <Link className={navbarClass} to={url}>
+          <Link className="isHomepage" to={url}>
             {label}
           </Link>
         </li>

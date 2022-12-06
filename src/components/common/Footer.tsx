@@ -180,9 +180,11 @@ export const Footer = () => {
           </p>
           <ul>
             {dataLinks.map(({ url, label }) => (
-              <Link key={label} to={url}>
-                <li>{label}</li>
-              </Link>
+              <li>
+                <Link key={label} to={url}>
+                  {label}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -230,16 +232,6 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        {/* <div className="col-3 col">
-          <div className="text-above">
-            <p>January 20, 2017 </p>
-            <p>Etiam risus nunc, feugiat id commodo ut, laoreet in augue</p>
-          </div>
-          <div className="text-below">
-            <p>January 20, 2017 </p>
-            <p>Etiam risus nunc, feugiat id commodo ut, laoreet in augue</p>
-          </div>
-        </div> */}
         <div className="col-4 col">
           <img src={footerPic1} alt="" />
           <img src={footerPic2} alt="" />

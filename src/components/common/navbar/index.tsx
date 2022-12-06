@@ -80,7 +80,6 @@ const NavbarStyle = styled.header`
 
 export const Navbar = () => {
   const { pathname } = useLocation();
-  const [navbarClass, setNavbarClass] = useState<string>("isHomepage");
   const [overlay, setOverlay] = useState<string>("");
 
   useEffect(() => {
@@ -92,15 +91,15 @@ export const Navbar = () => {
   }, [pathname]);
 
   return (
-    <NavbarStyle className={`navbar-container ${navbarClass}`}>
+    <NavbarStyle className="navbar-container isHomepage">
       <div className={`overlay ${overlay}`} />
       <div className="logo-container">
         <Link to="/">
-          <img className={navbarClass} src={logotext} alt="Wine of Marche" />
+          <img className="isHomepage" src={logotext} alt="Wine of Marche" />
         </Link>
       </div>
       <nav className="navigation-container">
-        <DesktopNavbar navbarClass={navbarClass} />
+        <DesktopNavbar />
         <MobileNavbar />
       </nav>
     </NavbarStyle>

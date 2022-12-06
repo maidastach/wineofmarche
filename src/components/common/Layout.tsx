@@ -4,17 +4,7 @@ import { Footer } from "./Footer";
 import { Navbar } from "./navbar";
 import { ScrollToTop } from "./ScrollToTop";
 
-const LayoutStyle = styled.main.attrs({ className: "layout-container" })`
-  /* section:not(.homepage-container) {
-    padding-inline: 2rem;
-  }
-
-  @media only screen and (min-width: 1280px) {
-    section:not(.homepage-container) {
-      padding-inline: 4rem;
-    }
-  } */
-`;
+const LayoutStyle = styled.main.attrs({ className: "layout-container" })``;
 export const Layout = () => {
   return (
     <LayoutStyle>

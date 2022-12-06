@@ -1,11 +1,6 @@
 import { Navigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import {
-  greyDescription,
-  winelisthp,
-  winetitle,
-} from "../../components/common/colors";
 import { MaxWidthComponent } from "../../components/common/MaxWidthComponent";
 import winelist from "../../data/data-wines.json";
 import { RelatedProducts } from "./RelatedProducts";
@@ -16,7 +11,6 @@ const WinePageStyle = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  /* padding-top: 2rem; */
 
   .winepage-content {
     padding-bottom: 3rem;
@@ -124,8 +118,6 @@ const WinePageStyle = styled.section`
   }
 
   @media only screen and (min-width: 1280px) {
-    /* padding-top: 3rem; */
-
     .winepage-content {
       .max-width-component {
         margin-top: 8rem;
