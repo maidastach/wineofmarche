@@ -121,6 +121,11 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
       }
       .col-1 {
         width: 100%;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
       }
       .col-4 {
         grid-template-columns: 1fr 1fr 1fr;
@@ -130,14 +135,6 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
   @media only screen and (min-width: 1280px) {
     .footer-max-width {
       grid-template-columns: 1fr 1fr 1fr;
-
-      .col-1 {
-        ul {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-      }
 
       .col-2 {
         p {
