@@ -183,7 +183,7 @@ export const Footer = () => {
           </p>
           <ul>
             {dataLinks.map(({ url, label }) => (
-              <Link to={url}>
+              <Link key={label} to={url}>
                 <li>{label}</li>
               </Link>
             ))}
