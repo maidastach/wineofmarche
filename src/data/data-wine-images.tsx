@@ -1,12 +1,12 @@
-import apollonia from "../assets/images/wines/apollonia.png";
-import campodicuori from "../assets/images/wines/campodicuori.png";
-import contatto from "../assets/images/wines/contatto.png";
-import extrabrutrose from "../assets/images/wines/extrabrutrose.png";
-import flora from "../assets/images/wines/flora.png";
-import isola from "../assets/images/wines/isola.png";
-import opere from "../assets/images/wines/opere.png";
-import suono from "../assets/images/wines/suono.png";
-import urbano from "../assets/images/wines/urbano.png";
+import apollonia from "../assets/images/wines/apollonian.png";
+import campodicuori from "../assets/images/wines/campodicuorin.png";
+import contatto from "../assets/images/wines/contatton.png";
+import extrabrutrose from "../assets/images/wines/extrabrutrosen.png";
+import flora from "../assets/images/wines/floran.png";
+import isola from "../assets/images/wines/isolan.png";
+import opere from "../assets/images/wines/operen.png";
+import suono from "../assets/images/wines/suonon.png";
+import urbano from "../assets/images/wines/urbanon.png";
 
 export const imagesOfWines = [
   {
