@@ -8,20 +8,18 @@ import {
   winetitle,
 } from "../../components/common/colors";
 
-import moreWinePic from "../../assets/images/morewines.jpg";
-
 const RelatedProductsStyle = styled.div.attrs({
   className: "related-products",
 })`
   display: flex;
   gap: 2rem;
   flex-direction: column;
-  padding: 1rem 2rem 3rem;
+  padding: 2rem 2rem 4rem;
 
   h2 {
     font-size: 20px;
     text-align: left;
-    color: #ffe000;
+    color: ${winelisthp};
   }
 
   .wines-container {
@@ -55,12 +53,12 @@ const RelatedProductsStyle = styled.div.attrs({
 
       h3 {
         font-size: 16px;
-        color: #ffe000;
+        color: ${winetitle};
         font-family: Daniel;
       }
 
       p {
-        color: white;
+        color: ${greyDescription};
         font-size: 10px;
       }
     }
@@ -68,7 +66,6 @@ const RelatedProductsStyle = styled.div.attrs({
 
   @media only screen and (min-width: 1280px) {
     padding-inline: 4rem;
-    padding-block: 8rem;
 
     h2 {
       font-size: 25px;
