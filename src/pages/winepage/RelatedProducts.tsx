@@ -2,7 +2,11 @@ import styled from "styled-components";
 import winelist from "../../data/data-wines.json";
 import { imagesOfWines } from "../../data/data-wine-images";
 import { Link } from "react-router-dom";
-import { greyDescription, winetitle } from "../../components/common/colors";
+import {
+  greyDescription,
+  winelisthp,
+  winetitle,
+} from "../../components/common/colors";
 
 const RelatedProductsStyle = styled.div.attrs({
   className: "related-products",
@@ -12,14 +16,9 @@ const RelatedProductsStyle = styled.div.attrs({
   flex-direction: column;
 
   h2 {
-    font-size: 28px;
-    line-height: 1.5em;
+    font-size: 20px;
     text-align: left;
-    color: ${greyDescription};
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-top: 0;
+    color: ${winelisthp};
   }
 
   .wines-container {
@@ -30,11 +29,11 @@ const RelatedProductsStyle = styled.div.attrs({
 
     .single-wine {
       width: 40%;
-      max-width: 200px;
+      max-width: 170px;
 
       img {
         width: 100%;
-        height: 280px;
+        height: 170px;
         object-fit: cover;
         object-position: bottom;
         transition: 0.75s all;
@@ -47,38 +46,37 @@ const RelatedProductsStyle = styled.div.attrs({
       h3,
       p {
         margin: 0;
-        font-weight: 400;
-        line-height: 1.03em;
-        letter-spacing: 0.2em;
         text-align: center;
+        padding-inline: 0.75rem;
       }
 
       h3 {
-        font-size: 20px;
+        font-size: 16px;
         color: ${winetitle};
         font-family: Daniel;
-        margin-top: 0.5rem;
       }
 
       p {
         color: ${greyDescription};
-        font-size: 13px;
-        font-weight: 600;
+        font-size: 10px;
       }
     }
   }
 
   @media only screen and (min-width: 1280px) {
     h2 {
-      font-size: 34px;
+      font-size: 25px;
     }
     .wines-container {
       .single-wine {
+        img {
+          height: 200px;
+        }
         h3 {
-          font-size: 25px;
+          font-size: 22px;
         }
         p {
-          font-size: 17px;
+          font-size: 14px;
         }
       }
     }

@@ -130,6 +130,23 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
   @media only screen and (min-width: 1280px) {
     .footer-max-width {
       grid-template-columns: 1fr 1fr 1fr;
+
+      .col-1 {
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+
+      .col-2 {
+        p {
+          span {
+            margin-left: 23px;
+          }
+        }
+      }
+
       img.logo-footer {
         width: 300px;
         margin-left: -1rem;
@@ -139,10 +156,11 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
       }
 
       p {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 0.5rem;
       }
       .col-1 li {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
     .footer-copyright {
