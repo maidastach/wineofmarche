@@ -28,9 +28,6 @@ const RelatedProductsStyle = styled.div.attrs({
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    a {
-      display: contents;
-    }
     .single-wine {
       width: 40%;
       max-width: 200px;

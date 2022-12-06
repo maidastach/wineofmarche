@@ -1,72 +1,34 @@
 import styled from "styled-components";
-// import logopic from "../../../assets/images/logopic.png";
-// import heropic from "../../../assets/images/heropic.webp";
 import heropic from "../../../assets/images/hero3.jpeg";
 
 const HeroStyle = styled.div.attrs({ className: "hero-container" })`
   display: flex;
-  min-height: 80vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  position: relative;
 
-  .background {
-    height: 100%;
+  img {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(${heropic});
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 60vh;
+    object-fit: cover;
   }
-  /* .overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background: saddlebrown;
-    opacity: 0.2;
-  } */
-
-  /* img {
-    position: relative;
-    z-index: 2;
-    width: 200px;
-    height: 200px;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  } */
 
   @media only screen and (min-width: 768px) {
-    align-items: flex-end;
-    min-height: 90vh;
-
-    .background {
-      background-size: 100% 100%;
+    img {
+      height: unset;
+      object-fit: contain;
     }
+  }
 
-    /* img {
-      width: 350px;
-      height: 350px;
-      margin-right: 3rem;
-      margin-bottom: 3rem;
-      margin-top: unset;
-    } */
+  @media only screen and (min-width: 1280px) {
+    img {
+      max-height: 90vh;
+      object-fit: cover;
+    }
   }
 `;
 
 export const Hero = () => {
   return (
     <HeroStyle>
-      <div className="background"></div>
-      {/* <div className="overlay"></div> */}
-      {/* <img src={logopic} alt="wine-logo" /> */}
+      <img src={heropic} alt="Hero Wine of MArche" />
     </HeroStyle>
   );
 };

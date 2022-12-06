@@ -4,7 +4,7 @@ import { Footer } from "./Footer";
 import { Navbar } from "./navbar";
 import { ScrollToTop } from "./ScrollToTop";
 
-const LayoutStyle = styled.section.attrs({ className: "layout-container" })`
+const LayoutStyle = styled.main.attrs({ className: "layout-container" })`
   section:not(.homepage-container) {
     padding-inline: 2rem;
   }

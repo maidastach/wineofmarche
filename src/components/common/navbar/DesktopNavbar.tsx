@@ -10,7 +10,7 @@ const DesktopNavbarStyle = styled.nav.attrs({
   @media only screen and (min-width: 768px) {
     display: flex;
     gap: 2rem;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 
     .nav-links {
       font-size: 14px;

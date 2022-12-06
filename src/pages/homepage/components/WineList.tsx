@@ -11,36 +11,21 @@ import {
   winetitle,
 } from "../../../components/common/colors";
 
-const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
-  padding: 4rem 2rem;
+const WineListStyle = styled.div.attrs({
+  className: "wine-list-container container",
+})`
   background: url(${imageWineBG}) center/cover no-repeat;
-  overflow: hidden;
-  box-shadow: 3.8px -7.5px 7.5px hsl(0deg 0% 0% / 0.38);
-  min-height: 550px;
-  position: relative;
+  gap: 3rem;
 
   h2.section-title {
-    font-size: 35px;
-    line-height: 1.5em;
-    text-align: left;
     color: ${winelisthp};
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: 0;
-    margin-bottom: 4rem;
   }
 
   .wines-motion-wrapper {
     display: -webkit-box;
     -webkit-box-align: center;
     gap: 3rem;
-    min-height: 400px;
     cursor: grab;
-
-    a {
-      display: contents;
-    }
 
     .wine-img-container {
       position: relative;
@@ -48,16 +33,12 @@ const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 250px;
-      height: 330px;
+      width: 200px;
+      height: 280px;
       border: 3px solid ${borderColor};
       border-radius: 25px;
       box-shadow: 3px 2px 8px 4px grey;
       transition: 0.3s linear;
-
-      &:hover {
-        margin-inline: 3rem;
-      }
 
       &:hover .wine-overlay {
         opacity: 1;
@@ -65,15 +46,13 @@ const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
       }
 
       &:hover img {
-        transform: scale(1.2) translateX(60px);
+        transform: scale(1.1) translateX(50px) translateY(20px);
       }
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
 
       .wine-overlay {
-        position: absolute;
-        top: 0;
         left: 10px;
         z-index: -1;
         opacity: 0;
@@ -82,9 +61,8 @@ const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
         justify-content: flex-start;
         align-items: center;
         width: 60%;
-        height: 100%;
-        border-radius: 20px;
-        transition: 0.5s ease;
+        border-radius: 25px;
+        transition: 0.3s ease;
         text-align: start;
 
         h2 {
@@ -92,27 +70,48 @@ const WineListStyle = styled.div.attrs({ className: "wine-list-container" })`
           color: ${winetitle};
           margin-top: 2rem;
           width: 90%;
-          font-size: 20px;
-          margin-bottom: 0;
+          font-size: 18px;
         }
         p {
           width: 90%;
-          margin-bottom: 0;
-          font-size: 14px;
+          font-size: 13px;
           color: ${winelisthp};
         }
       }
 
       img {
         object-fit: contain;
-        width: 70px;
+        width: 50px;
         transition: 0.5s ease;
       }
     }
   }
 
   @media only screen and (min-width: 1280px) {
-    padding-inline: 4rem;
+    gap: 4rem;
+    .wines-motion-wrapper {
+      .wine-img-container {
+        width: 250px;
+        height: 330px;
+        &:hover {
+          margin-inline: 1rem;
+          transform: scale(1.2);
+        }
+
+        &:hover img {
+          transform: scale(1.2) translateX(60px) translateY(20px);
+        }
+
+        .wine-overlay {
+          h2 {
+            font-size: 20px;
+          }
+        }
+        img {
+          width: 60px;
+        }
+      }
+    }
   }
 `;
 
@@ -130,7 +129,7 @@ export const WineList = () => {
 
   return (
     <WineListStyle id="wines-list">
-      <h2 className="section-title">OUR WINES</h2>
+      <h2 className="section-title">Our Wines</h2>
       <motion.div
         drag="x"
         dragConstraints={{
@@ -150,7 +149,7 @@ export const WineList = () => {
                 }
                 alt={name}
               />
-              <div className="wine-overlay">
+              <div className="wine-overlay overlay">
                 <h2>{name}</h2>
                 <p>{type.split(",")[0]}</p>
               </div>

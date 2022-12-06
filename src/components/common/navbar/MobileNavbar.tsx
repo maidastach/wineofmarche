@@ -12,11 +12,11 @@ const MobileNavbarStyle = styled.nav.attrs({
   width: 20px;
   height: 20px;
   img.menu-action {
+    position: relative;
+    z-index: 12;
     width: 20px;
     height: 20px;
     filter: invert(0.7);
-    position: relative;
-    z-index: 12;
     transition: 0.4s ease all;
     cursor: pointer;
   }
@@ -30,6 +30,7 @@ const MobileNavbarStyle = styled.nav.attrs({
     position: fixed;
     top: -150vh;
     left: 0;
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +78,7 @@ export const MobileNavbar = () => {
       />
       <div
         className="navigation-body"
-        style={{ top: isMenuOpen ? 0 : "-150vh" }}
+        style={{ top: isMenuOpen ? 0 : "-150vh", opacity: isMenuOpen ? 1 : 0 }}
       >
         <img src={logopic} alt="logo pic" className="logo-pic" />
         <ul className="links-container">
