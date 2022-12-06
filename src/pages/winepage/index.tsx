@@ -1,7 +1,11 @@
 import { Navigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import { greyDescription, winetitle } from "../../components/common/colors";
+import {
+  greyDescription,
+  winelisthp,
+  winetitle,
+} from "../../components/common/colors";
 import { MaxWidthComponent } from "../../components/common/MaxWidthComponent";
 import winelist from "../../data/data-wines.json";
 import { RelatedProducts } from "./RelatedProducts";
@@ -14,6 +18,7 @@ const WinePageStyle = styled.section`
   padding-bottom: 3rem;
 
   .wine-container {
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -26,19 +31,17 @@ const WinePageStyle = styled.section`
     .wine-header {
       grid-area: header;
       h1 {
-        font-size: 28px;
-        line-height: 1.5em;
+        font-size: 20px;
         text-align: left;
-        color: ${greyDescription};
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        font-weight: 400;
-        margin-bottom: 0;
+        color: ${winelisthp};
       }
     }
     .wine-images {
       grid-area: images;
       margin: auto;
+      img {
+        height: 450px;
+      }
     }
     .wine-specs {
       grid-area: specs;
@@ -46,20 +49,17 @@ const WinePageStyle = styled.section`
       p {
         margin-top: 0;
         margin-bottom: 0.5rem;
-        font-weight: 400;
-        line-height: 1.03em;
-        letter-spacing: 0.2em;
       }
 
       h2 {
-        font-size: 35px;
+        font-size: 30px;
         color: ${winetitle};
         font-family: Daniel;
       }
 
       p {
         color: ${greyDescription};
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 600;
       }
     }
@@ -76,17 +76,13 @@ const WinePageStyle = styled.section`
       }
 
       h3 {
-        font-size: 20px;
-        letter-spacing: 0.15em;
-        /* color: #282727; */
-        font-weight: bold;
+        font-size: 16px;
         color: ${winetitle};
       }
 
       p {
         color: ${greyDescription};
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 13px;
       }
     }
   }
@@ -105,29 +101,41 @@ const WinePageStyle = styled.section`
           text-align: center;
         }
       }
+
+      .wine-description {
+        margin-top: 0;
+      }
     }
   }
 
   @media only screen and (min-width: 1280px) {
     padding-top: 3rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
     .wine-container {
+      .wine-images {
+        img {
+          height: auto;
+          transition: 0.5s ease;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
       .wine-specs {
         h2 {
-          font-size: 45px;
+          font-size: 40px;
         }
         p {
-          font-size: 28px;
+          font-size: 22px;
         }
       }
 
       .wine-description {
-        margin-top: 0;
         h3 {
-          font-size: 30px;
+          font-size: 22px;
         }
         p {
-          font-size: 20px;
+          font-size: 18px;
         }
       }
     }

@@ -32,7 +32,7 @@ export const WineCard = ({ wine }: IWineCard) => {
   return (
     <div className="wine-container">
       <div className="wine-header">
-        <h1>OUR WINES</h1>
+        <h1>Our Wines</h1>
       </div>
       <div className="wine-images">
         <img
