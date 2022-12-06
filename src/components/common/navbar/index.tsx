@@ -47,17 +47,15 @@ const NavbarStyle = styled.header`
     padding: 1rem 2rem;
   }
   @media only screen and (min-width: 1280px) {
-    &.isHomepage {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 5;
-      width: 100%;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
     padding-inline: 0;
     justify-content: space-around;
 
-    .overlay.isHomepage {
+    .overlay.isOverlay {
       display: block;
       width: 100%;
       height: 100%;
@@ -82,19 +80,20 @@ const NavbarStyle = styled.header`
 
 export const Navbar = () => {
   const { pathname } = useLocation();
-  const [navbarClass, setNavbarClass] = useState<string>("");
+  const [navbarClass, setNavbarClass] = useState<string>("isHomepage");
+  const [overlay, setOverlay] = useState<string>("");
 
   useEffect(() => {
     if (pathname === "/") {
-      setNavbarClass("isHomepage");
+      setOverlay("isOverlay");
     } else {
-      setNavbarClass("");
+      setOverlay("");
     }
   }, [pathname]);
 
   return (
     <NavbarStyle className={`navbar-container ${navbarClass}`}>
-      <div className={`overlay ${navbarClass}`} />
+      <div className={`overlay ${overlay}`} />
       <div className="logo-container">
         <Link to="/">
           <img className={navbarClass} src={logotext} alt="Wine of Marche" />

@@ -5,7 +5,7 @@ import { Navbar } from "./navbar";
 import { ScrollToTop } from "./ScrollToTop";
 
 const LayoutStyle = styled.main.attrs({ className: "layout-container" })`
-  section:not(.homepage-container) {
+  /* section:not(.homepage-container) {
     padding-inline: 2rem;
   }
 
@@ -13,7 +13,7 @@ const LayoutStyle = styled.main.attrs({ className: "layout-container" })`
     section:not(.homepage-container) {
       padding-inline: 4rem;
     }
-  }
+  } */
 `;
 export const Layout = () => {
   return (

@@ -13,6 +13,8 @@ const MaxWidthStyle = styled.div`
 
 export const MaxWidthComponent = ({ children, label }: IMaxWidthComponent) => {
   return (
-    <MaxWidthStyle className={`${label}-max-width`}>{children}</MaxWidthStyle>
+    <MaxWidthStyle className={`${label}-max-width max-width-component`}>
+      {children}
+    </MaxWidthStyle>
   );
 };

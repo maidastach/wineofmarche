@@ -14,7 +14,7 @@ const RelatedProductsStyle = styled.div.attrs({
   display: flex;
   gap: 2rem;
   flex-direction: column;
-
+  padding-inline: 2rem;
   h2 {
     font-size: 20px;
     text-align: left;
@@ -64,6 +64,8 @@ const RelatedProductsStyle = styled.div.attrs({
   }
 
   @media only screen and (min-width: 1280px) {
+    padding-inline: 4rem;
+
     h2 {
       font-size: 25px;
     }
