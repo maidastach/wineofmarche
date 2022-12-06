@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { CustomButton } from "../../../components/materialUI/button";
 import { CustomInput } from "../../../components/materialUI/input";
 import { ContactFormSchema } from "../../../components/schemas";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { CustomSnackbar } from "../../../components/materialUI/snackbar";
 
 interface IContactForm {
@@ -19,6 +19,8 @@ const INITIAL_VALUES: IContactForm = {
 };
 
 export const ContactForm = () => {
+  const formRef = useRef<null | HTMLFormElement>(null);
+
   const [snackbarMessage, setSnackbarMessage] = useState<{
     message: string;
     severity: "success" | "error";
@@ -26,29 +28,24 @@ export const ContactForm = () => {
 
   const handleSubmit = async (values: IContactForm, actions: any) => {
     try {
-      console.log(values);
-
       if (
         process.env.REACT_APP_SERVICE_ID &&
         process.env.REACT_APP_TEMPLATE_ID &&
-        process.env.REACT_APP_USER_ID
-      )
-        console.log(
+        process.env.REACT_APP_USER_ID &&
+        formRef.current
+      ) {
+        await emailjs.sendForm(
           process.env.REACT_APP_SERVICE_ID,
           process.env.REACT_APP_TEMPLATE_ID,
+          formRef.current,
           process.env.REACT_APP_USER_ID
         );
-      // await emailjs.send(
-      //   process.env.REACT_APP_SERVICE_ID,
-      //   process.env.REACT_APP_TEMPLATE_ID,
-      //   values,
-      //   process.env.REACT_APP_USER_ID
-      // );
-      // actions.resetForm();
-      setSnackbarMessage({
-        message: "Thanks for contacting us!",
-        severity: "success",
-      });
+        actions.resetForm();
+        setSnackbarMessage({
+          message: "Thanks for contacting us!",
+          severity: "success",
+        });
+      }
     } catch (err) {
       console.error(err);
       setSnackbarMessage({
@@ -66,7 +63,7 @@ export const ContactForm = () => {
       onSubmit={handleSubmit}
     >
       {({ isSubmitting }) => (
-        <Form className="form-container">
+        <Form className="form-container" ref={formRef}>
           <CustomInput label="Full Name" name="full_name" />
           <CustomInput label="Email" name="email" />
           <CustomInput
