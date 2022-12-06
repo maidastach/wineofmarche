@@ -50,10 +50,12 @@ const FooterStyle = styled.footer.attrs({ className: "footer-container" })`
 
     .col-1 {
       li {
-        color: white;
         width: fit-content;
-        &:hover {
-          color: ${winelisthp};
+        a {
+          color: white;
+          &:hover {
+            color: ${winelisthp};
+          }
         }
       }
     }
