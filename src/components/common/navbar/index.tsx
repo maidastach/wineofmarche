@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { winelisthp, winetitle } from "../colors";
 
-const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
+const NavbarStyle = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,11 +47,13 @@ const NavbarStyle = styled.header.attrs({ className: "navbar-container" })`
     padding: 1rem 2rem;
   }
   @media only screen and (min-width: 1280px) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    width: 100%;
+    &.isHomepage {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+    }
     padding-inline: 0;
     justify-content: space-around;
 
@@ -91,7 +93,7 @@ export const Navbar = () => {
   }, [pathname]);
 
   return (
-    <NavbarStyle>
+    <NavbarStyle className={`navbar-container ${navbarClass}`}>
       <div className={`overlay ${navbarClass}`} />
       <div className="logo-container">
         <Link to="/">

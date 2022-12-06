@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heropic from "../../../assets/images/heropica.webp";
+import vignaPic from "../../../assets/images/vigna.jpg";
 
 const ExperienceStyle = styled.div.attrs({
   className: "experience-container",
@@ -8,7 +8,7 @@ const ExperienceStyle = styled.div.attrs({
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(${heropic}) center/cover no-repeat;
+  background: url(${vignaPic}) center/cover no-repeat;
   height: 600px;
   position: relative;
   background-attachment: fixed;
@@ -17,7 +17,7 @@ const ExperienceStyle = styled.div.attrs({
 
   div.overlay {
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.3;
     z-index: 1;
   }
   h2 {
