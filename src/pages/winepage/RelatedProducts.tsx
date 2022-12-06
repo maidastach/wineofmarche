@@ -16,17 +16,7 @@ const RelatedProductsStyle = styled.div.attrs({
   display: flex;
   gap: 2rem;
   flex-direction: column;
-  padding-inline: 2rem;
-  padding-block: 3rem;
-  background-image: url(${moreWinePic});
-  background-color: #00000096;
-  background-blend-mode: soft-light;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .background {
-  }
+  padding: 1rem 2rem 3rem;
 
   h2 {
     font-size: 20px;
