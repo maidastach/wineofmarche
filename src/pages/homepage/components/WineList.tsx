@@ -29,7 +29,7 @@ const WineListStyle = styled.div.attrs({
 
     .wine-img-container {
       position: relative;
-      background-color: white;
+      background-color: transparent;
       display: flex;
       justify-content: center;
       align-items: center;
