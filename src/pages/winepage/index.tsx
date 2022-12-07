@@ -128,6 +128,7 @@ const WinePageStyle = styled.section`
       .wine-images {
         img {
           height: auto;
+          max-height: 550px;
           transition: 0.5s ease;
           &:hover {
             transform: scale(1.2);
