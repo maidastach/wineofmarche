@@ -295,5 +295,71 @@
         "data": "Vinification and wine aging The bunch of grape is soflty and quickly pressed. It permits to obtain 40% of must. The fermentation occurs at controlled temperature of 16°C and the tirage occurs in the following year. The wine takes place on the noble wine lees at the least 36 months and it is sold 6 months after the degorgement."
       }
     }
+  },
+  {
+    "id": "lacrima",
+    "name": "LACRIMA",
+    "type": "Lacrima di Morro d'Alba DOP",
+    "image": "",
+    "specs": {
+      "grape": {
+        "id": "grape",
+        "label": "Grape",
+        "data": "Lacrima di Morro D'alba"
+      },
+      "growing": {
+        "id": "growing",
+        "label": "Growing technique",
+        "data": "Guyot"
+      },
+      "yield": {
+        "id": "yield",
+        "label": "Yield per hectare",
+        "data": "50 q"
+      },
+      "harvest": {
+        "id": "harvest",
+        "label": "Grape harvest period",
+        "data": "End of September"
+      },
+      "vinification": {
+        "id": "vinification",
+        "label": "Vinification and wine aging",
+        "data": "The fermentation of the destemmed grapes takes place at a temperature of 23°C and a maceration period of about 20 days. The wine ages for about 4 months in stainless steel tanks with a subsequent refinement in the bottle for 2 months."
+      }
+    }
+  },
+  {
+    "id": "millesimato",
+    "name": "MILLESIMATO",
+    "type": "Millesimato Valdobbiadene, Prosecco Superiore DOCG",
+    "image": "",
+    "specs": {
+      "grape": {
+        "id": "grape",
+        "label": "Grape",
+        "data": "Contact us to know more"
+      },
+      "growing": {
+        "id": "growing",
+        "label": "Growing technique",
+        "data": "Contact us to know more"
+      },
+      "yield": {
+        "id": "yield",
+        "label": "Yield per hectare",
+        "data": "Contact us to know more"
+      },
+      "harvest": {
+        "id": "harvest",
+        "label": "Grape harvest period",
+        "data": "Contact us to know more"
+      },
+      "vinification": {
+        "id": "vinification",
+        "label": "Vinification and wine aging",
+        "data": "The Valdobbiadene Prosecco superiore DOCG Millesimato is a white sparkling wine made from the best selected grapes harvested in a year. These have been hand-picked from the highest hills where the sun light gives to the Prosecco grape the best ripeness, an intense aroma and a superior preservation of the organoleptic properties. This blend produces a fresh and round wine, with elegant flair, suitable for the best occasions. The colour is a straw-yellow. Recommended serving temperature: (8°C)."
+      }
+    }
   }
 ]

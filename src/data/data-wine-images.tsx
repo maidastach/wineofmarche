@@ -7,6 +7,8 @@ import isola from "../assets/images/wines/isolan.png";
 import opere from "../assets/images/wines/operen.png";
 import suono from "../assets/images/wines/suonon.png";
 import urbano from "../assets/images/wines/urbanon.png";
+import lacrima from "../assets/images/wines/lacriman.png";
+import millesimato from "../assets/images/wines/millesimaton.png";
 
 export const imagesOfWines = [
   {
@@ -44,5 +46,13 @@ export const imagesOfWines = [
   {
     id: "campodicuori",
     image: campodicuori,
+  },
+  {
+    id: "lacrima",
+    image: lacrima,
+  },
+  {
+    id: "millesimato",
+    image: millesimato,
   },
 ];

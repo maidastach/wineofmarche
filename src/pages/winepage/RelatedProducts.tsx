@@ -29,11 +29,13 @@ const RelatedProductsStyle = styled.div.attrs({
     justify-content: space-evenly;
 
     .single-wine {
-      width: 40%;
-      max-width: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 140px;
 
       img {
-        width: 100%;
+        width: 140px;
         height: 170px;
         object-fit: cover;
         object-position: bottom;
@@ -55,6 +57,7 @@ const RelatedProductsStyle = styled.div.attrs({
         font-size: 16px;
         color: ${winetitle};
         font-family: Daniel;
+        margin-top: 0.5rem;
       }
 
       p {
@@ -72,6 +75,7 @@ const RelatedProductsStyle = styled.div.attrs({
     }
     .wines-container {
       .single-wine {
+        max-width: 200px;
         img {
           height: 200px;
         }
@@ -85,11 +89,11 @@ const RelatedProductsStyle = styled.div.attrs({
     }
   }
 
-  @media only screen and (min-width: 1700px) {
+  /* @media only screen and (min-width: 1950px) {
     .wines-container {
       justify-content: space-between;
     }
-  }
+  } */
 `;
 
 export const RelatedProducts = ({
