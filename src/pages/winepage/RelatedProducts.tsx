@@ -108,7 +108,7 @@ export const RelatedProducts = ({
       <h2>More Wines</h2>
       <div className="wines-container">
         {wines.map(({ id, name, type }) => (
-          <Link key={id} to={`/wines/${id}`}>
+          <Link key={id} to={`/wines/${id}/`}>
             <div className="single-wine">
               <img
                 src={imagesOfWines.find((w) => w.id === id)?.image}

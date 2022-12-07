@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         element: <HomepageScreen />,
       },
       {
-        path: "wines/:id",
+        path: "wines/:id/",
         element: <WinepageScreen />,
       },
       {
