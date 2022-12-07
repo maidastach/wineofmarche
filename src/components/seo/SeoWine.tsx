@@ -15,7 +15,7 @@ export const SeoWine = ({ wine, wineId }: ISeoProps) => {
       </title>
       <link
         rel="canonical"
-        href={`${process.env.REACT_APP_BASE_URL}/wines/${wine.id}`}
+        href={`${process.env.REACT_APP_BASE_URL}/wines/${wine.id}/`}
       />
       <meta
         property="og:title"
@@ -25,7 +25,7 @@ export const SeoWine = ({ wine, wineId }: ISeoProps) => {
       <meta property="og:description" content={wine.type} />
       <meta
         property="og:url"
-        content={`${process.env.REACT_APP_BASE_URL}/wines/${wine.id}`}
+        content={`${process.env.REACT_APP_BASE_URL}/wines/${wine.id}/`}
       />
       <meta property="keywords" content={`${wine.id} ${wine.type}`} />
       <meta property="og:type" content="Product" />
@@ -54,7 +54,7 @@ export const SeoWine = ({ wine, wineId }: ISeoProps) => {
           brand: {
             "@type": "Organization",
             name: "Wine of Marche",
-            "@id": "https://wineofmarche.au",
+            "@id": "https://wineofmarche.au/",
           },
           review: {
             "@type": "Review",
@@ -76,7 +76,7 @@ export const SeoWine = ({ wine, wineId }: ISeoProps) => {
             address: "Italy",
           },
           keywords: wine.type,
-          url: `${process.env.REACT_APP_BASE_URL}/wines/${wine.id}`,
+          url: `${process.env.REACT_APP_BASE_URL}/wines/${wine.id}/`,
         })}
       </script>
     </Helmet>

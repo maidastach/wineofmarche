@@ -141,7 +141,7 @@ export const WineList = () => {
       >
         {winelist.map(({ id, name, type }, idx) => (
           <div key={name} className={`wine-img-container ${name}-container`}>
-            <Link to={`/wines/${id}`}>
+            <Link to={`/wines/${id}/`}>
               <img
                 src={
                   imagesOfWines.find((w) => w.id === id)?.image ||
