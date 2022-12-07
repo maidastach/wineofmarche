@@ -70,6 +70,7 @@ export const HomepageScreen = () => {
             keywords: "Wine Sydney Marche Italy Italian Australia",
             knowsLanguage: "English, Italian",
             logo: `${process.env.REACT_APP_BASE_URL}${logoPic}`,
+            url: `${process.env.REACT_APP_BASE_URL}/`,
           })}
         </script>
       </Helmet>
