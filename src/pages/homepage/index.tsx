@@ -43,6 +43,9 @@ export const HomepageScreen = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LiquorStore",
+            name: "Wine of Marche",
+            image: `${process.env.REACT_APP_BASE_URL}${logoPic}`,
+            telephone: "+61434004360",
             currenciesAccepted: "AUD",
             openingHours: "Mo, Tu, We, Th, Fr, Sa, Su",
             paymentAccepted: "Credit Card, Cash",
