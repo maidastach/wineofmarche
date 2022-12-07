@@ -5,7 +5,7 @@ interface SpecsOfWine {
   label: string;
   data: string;
 }
-interface IWineCard {
+export interface IWineCard {
   wine: {
     id: string;
     name: string;
