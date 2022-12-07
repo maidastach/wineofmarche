@@ -172,10 +172,6 @@ export const WinepageScreen = () => {
         <title>
           {wine.name} | {wine.type.split(",")[0]} | Wine of Marche
         </title>
-
-        <meta name="googlebot" content="index,follow" />
-        <meta name="robots" content="index,follow" />
-
         <link
           rel="canonical"
           href={`${process.env.REACT_APP_BASE_URL}/wines/${wine.id}`}
@@ -202,8 +198,6 @@ export const WinepageScreen = () => {
         <meta property="og:image:alt" content={wine.name} />
         <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="400" />
-        <meta property="og:locale" content="en_EN" />
-        <meta property="og:site_name" content="Wine of Marche" />
 
         <script type="application/ld+json">
           {JSON.stringify({
