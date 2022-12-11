@@ -9,6 +9,19 @@ interface ISeoProps extends IWineCard {
 export const SeoWine = ({ wine, wineId }: ISeoProps) => {
   return (
     <Helmet>
+      {/* GOOGLE TAG ANALYTICS */}
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.REACT_APP_GTAG_ID}`}
+      />
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', ${process.env.REACT_APP_GTAG_ID});
+        `}
+      </script>
       {/* META TAGS */}
       <title>
         {wine.name} | {wine.type.split(",")[0]} | Wine of Marche

@@ -4,6 +4,20 @@ import logoPic from "../../assets/images/logopics.png";
 export const SeoHome = () => {
   return (
     <Helmet>
+      {/* GOOGLE TAG ANALYTICS */}
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.REACT_APP_GTAG_ID}`}
+      />
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', ${process.env.REACT_APP_GTAG_ID});
+        `}
+      </script>
+
       {/* META TAGS */}
       <title>Wine of Marche</title>
       <link rel="canonical" href={`${process.env.REACT_APP_BASE_URL}/`} />
