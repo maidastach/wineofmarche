@@ -1,9 +1,9 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import logoPic from "../../assets/images/logopics.png";
 
 export const SeoHome = () => {
   return (
-    <Helmet>
+    <Helmet prioritizeSeoTags>
       {/* GOOGLE TAG ANALYTICS */}
       <script
         async
@@ -11,11 +11,11 @@ export const SeoHome = () => {
       />
       <script>
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', ${process.env.REACT_APP_GTAG_ID});
-        `}
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', ${process.env.REACT_APP_GTAG_ID});
+      `}
       </script>
 
       {/* META TAGS */}

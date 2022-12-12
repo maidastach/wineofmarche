@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { imagesOfWines } from "../../data/data-wine-images";
 import { IWineCard } from "../../pages/winepage/WineCard";
 
@@ -8,7 +8,7 @@ interface ISeoProps extends IWineCard {
 
 export const SeoWine = ({ wine, wineId }: ISeoProps) => {
   return (
-    <Helmet>
+    <Helmet prioritizeSeoTags>
       {/* GOOGLE TAG ANALYTICS */}
       <script
         async
@@ -22,6 +22,7 @@ export const SeoWine = ({ wine, wineId }: ISeoProps) => {
           gtag('config', ${process.env.REACT_APP_GTAG_ID});
         `}
       </script>
+
       {/* META TAGS */}
       <title>
         {wine.name} | {wine.type.split(",")[0]} | Wine of Marche
