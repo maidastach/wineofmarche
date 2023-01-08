@@ -72,6 +72,22 @@ const WinePageStyle = styled.section`
         font-size: 14px;
         font-weight: 600;
       }
+
+      a {
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        padding: 13px 26px;
+        font-size: initial;
+        font-family: "Cinzel", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Roobto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif, "Daniel";
+        margin-top: 0.75rem;
+        color: #ffe000;
+        border-color: rgba(255, 224, 0, 0.5);
+        &:hover {
+          border-color: rgba(255, 224, 0, 1);
+        }
+      }
     }
     .wine-description {
       grid-area: description;

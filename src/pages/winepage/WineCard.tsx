@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import { imagesOfWines } from "../../data/data-wine-images";
 
 interface SpecsOfWine {
@@ -11,6 +12,8 @@ export interface IWineCard {
     name: string;
     type: string;
     image: string;
+    isForSale: boolean;
+    url: string;
     specs: {
       grape: SpecsOfWine;
       growing: SpecsOfWine;
@@ -25,6 +28,8 @@ export const WineCard = ({ wine }: IWineCard) => {
   const {
     id: wineId,
     name,
+    isForSale,
+    url,
     type,
     specs: { grape, growing, yield: wineYield, harvest, vinification },
   } = wine;
@@ -45,6 +50,11 @@ export const WineCard = ({ wine }: IWineCard) => {
         {type.split(",").map((t) => (
           <p key={t}>{t}</p>
         ))}
+        {!!isForSale && (
+          <Button href={url} target="_blank" size="large" variant="outlined">
+            Buy Now
+          </Button>
+        )}
       </div>
       <div className="wine-description">
         <div className={grape.id}>

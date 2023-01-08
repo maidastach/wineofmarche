@@ -4,6 +4,8 @@
     "name": "ISOLA",
     "type": "Verdicchio dei Castelli di Jesi DOP",
     "image": "",
+    "isForSale": true,
+    "url": "https://www.cellarit.com.au/buy-wine/default.aspx?search=Federico%2bMencaroni%2bIsola%2bVerdicchio",
     "specs": {
       "grape": {
         "id": "grape",
@@ -37,6 +39,8 @@
     "name": "OPERE",
     "type": "Verdicchio dei Castelli di Jesi DOP",
     "image": "",
+    "isForSale": false,
+    "url": "",
     "specs": {
       "grape": {
         "id": "grape",
@@ -70,6 +74,8 @@
     "name": "FLORA",
     "type": "Marche Bianco IGP",
     "image": "",
+    "isForSale": false,
+    "url": "",
     "specs": {
       "grape": {
         "id": "grape",
@@ -103,6 +109,8 @@
     "name": "URBANO",
     "type": "Marche Rosso IGP",
     "image": "",
+    "isForSale": false,
+    "url": "",
     "specs": {
       "grape": {
         "id": "grape",
@@ -136,6 +144,8 @@
     "name": "SUONO",
     "type": "Rosso Piceno DOP",
     "image": "",
+    "isForSale": false,
+    "url": "",
     "specs": {
       "grape": {
         "id": "grape",
@@ -169,6 +179,8 @@
     "name": "APOLLONIA",
     "type": "Verdicchio dei Castelli di Jesi DOP, Metodo Classico Brut Nature",
     "image": "",
+    "isForSale": false,
+    "url": "",
     "specs": {
       "grape": {
         "id": "grape",
@@ -202,6 +214,8 @@
     "name": "CONTATTO",
     "type": "Verdicchio dei Castelli di Jesi DOP, Metodo Classico Brut",
     "image": "",
+    "isForSale": false,
+    "url": "",
     "specs": {
       "grape": {
         "id": "grape",
@@ -235,6 +249,8 @@
     "name": "EXTRA BRUT ROSÉ",
     "type": "Marche IGP Rosato, Spumante di Qualità, Metodo Classico Extra Brut",
     "image": "",
+    "isForSale": false,
+    "url": "",
     "specs": {
       "grape": {
         "id": "grape",
@@ -268,6 +284,8 @@
     "name": "CAMPO DI CUORI",
     "type": "Vino Bianco Spumante di qualità, Metodo Classico Extra Brut",
     "image": "",
+    "isForSale": false,
+    "url": "",
     "specs": {
       "grape": {
         "id": "grape",
@@ -301,6 +319,8 @@
     "name": "LACRIMA",
     "type": "Lacrima di Morro d'Alba DOP",
     "image": "",
+    "isForSale": false,
+    "url": "",
     "specs": {
       "grape": {
         "id": "grape",
@@ -334,6 +354,8 @@
     "name": "MILLESIMATO",
     "type": "Millesimato Valdobbiadene, Prosecco Superiore DOCG",
     "image": "",
+    "isForSale": true,
+    "url": "https://www.cellarit.com.au/buy-wine/default.aspx?search=Mic%25c3%25a8l%2bProsecco%2bmillesimato%2bValdobbiadene%2bsuperiore%2bDOCG%2bProsecco",
     "specs": {
       "grape": {
         "id": "grape",
