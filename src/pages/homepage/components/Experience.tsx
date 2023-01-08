@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import vignaPic from "../../../assets/images/vigna.jpg";
+import vignaPic from "../../../assets/images/wine of marche vigna.jpg";
 
 const ExperienceStyle = styled.div.attrs({
   className: "experience-container",
@@ -8,7 +8,7 @@ const ExperienceStyle = styled.div.attrs({
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(${vignaPic}) center/cover no-repeat;
+  background: url("${vignaPic}") center/cover no-repeat;
   height: 600px;
   position: relative;
   background-attachment: fixed;

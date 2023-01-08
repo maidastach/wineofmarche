@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import winelist from "../../../data/data-wines.json";
-import imageWineBG from "../../../assets/images/wines-list.jpg";
+import imageWineBG from "../../../assets/images/wine of marche wines list.jpg";
 import { imagesOfWines } from "../../../data/data-wine-images";
 import { Link } from "react-router-dom";
 import {
@@ -14,7 +14,7 @@ import {
 const WineListStyle = styled.div.attrs({
   className: "wine-list-container container",
 })`
-  background: url(${imageWineBG}) center/cover no-repeat;
+  background: url("${imageWineBG}") center/cover no-repeat;
   gap: 3rem;
 
   h2.section-title {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MaxWidthComponent } from "../../../components/common/MaxWidthComponent";
-import contactusPic from "../../../assets/images/about-us2.webp";
+import contactusPic from "../../../assets/images/wine of marche about us 2.webp";
 import { winelisthp, winetitle } from "../../../components/common/colors";
 import { ContactForm } from "./ContactForm";
 import { MapRenderer } from "./MapRenderer";

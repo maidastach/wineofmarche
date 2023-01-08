@@ -1,14 +1,14 @@
-import apollonia from "../assets/images/wines/apollonian.png";
-import campodicuori from "../assets/images/wines/campodicuorin.png";
-import contatto from "../assets/images/wines/contatton.png";
-import extrabrutrose from "../assets/images/wines/extrabrutrosen.png";
-import flora from "../assets/images/wines/floran.png";
-import isola from "../assets/images/wines/isolan.png";
-import opere from "../assets/images/wines/operen.png";
-import suono from "../assets/images/wines/suonon.png";
-import urbano from "../assets/images/wines/urbanon.png";
-import lacrima from "../assets/images/wines/lacriman.png";
-import millesimato from "../assets/images/wines/millesimaton.png";
+import apollonia from "../assets/images/wines/Apollonia Verdicchio dei Castelli di Jesi DOP Wine of Marche.png";
+import campodicuori from "../assets/images/wines/Campo di Cuori Vino Bianco Spumante di qualita Wine of Marche.png";
+import contatto from "../assets/images/wines/Contatto Verdicchio dei Castelli di Jesi DOP Wine of Marche.png";
+import extrabrutrose from "../assets/images/wines/Extra Brut Rose Marche IGP Rosato Wine of Marche.png";
+import flora from "../assets/images/wines/Flora Marche Bianco IGP Wine of Marche.png";
+import isola from "../assets/images/wines/Isola Verdicchio dei Castelli di Jesi DOP  Wine of Marche.png";
+import opere from "../assets/images/wines/Opere Verdicchio dei Castelli di Jesi DOP  Wine of Marche.png";
+import suono from "../assets/images/wines/Suono Rosso Piceno DOP Wine of Marche.png";
+import urbano from "../assets/images/wines/Urbano Marche Rosso IGP Wine of Marche.png";
+import lacrima from "../assets/images/wines/Lacrima Lacrima di Morro d'Alba DOP Wine of Marche.png";
+import millesimato from "../assets/images/wines/Millesimato Millesimato Valdobbiadene Prosecco Superiore DOCG Wine of Marche.png";
 
 export const imagesOfWines = [
   {

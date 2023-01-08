@@ -25,7 +25,8 @@ export const SeoWine = ({ wine, wineId }: ISeoProps) => {
 
       {/* META TAGS */}
       <title>
-        {wine.name} | {wine.type.split(",")[0]} | Wine of Marche
+        {wine.name} | {wine.type.split(",")[0]} | Wine of Marche | Italian Wine
+        Import Company
       </title>
       <link
         rel="canonical"
@@ -33,15 +34,26 @@ export const SeoWine = ({ wine, wineId }: ISeoProps) => {
       />
       <meta
         property="og:title"
-        content={`${wine.name} | ${wine.type.split(",")[0]} | Wine of Marche`}
+        content={`${wine.name} | ${
+          wine.type.split(",")[0]
+        } | Wine of Marche | Italian Wine Import Company`}
       />
-      <meta name="description" content={wine.type} />
-      <meta property="og:description" content={wine.type} />
+      <meta
+        name="description"
+        content={`${wine.type} | Wine of Marche | Italian Wine Import Company`}
+      />
+      <meta
+        property="og:description"
+        content={`${wine.type} | Wine of Marche | Italian Wine Import Company`}
+      />
       <meta
         property="og:url"
         content={`${process.env.REACT_APP_BASE_URL}/wines/${wine.id}/`}
       />
-      <meta property="keywords" content={`${wine.id} ${wine.type}`} />
+      <meta
+        property="keywords"
+        content={`${wine.id} ${wine.type} Wine Sydney Marche Italy Italian Australia Luxury Liquor Local Restaurant Wine Importer Apollonia Flora Campo di Cuori Contatto Extra Brut Isola Lacrima Millesimato Opere Suono Urbano`}
+      />
       <meta property="og:type" content="Product" />
       <meta
         property="og:image"
@@ -59,7 +71,7 @@ export const SeoWine = ({ wine, wineId }: ISeoProps) => {
           "@context": "https://schema.org",
           "@type": "Product",
           name: wine.name,
-          description: wine.type,
+          description: `${wine.type} | Wine of Marche | Italian Wine Import Company`,
           image: [
             `${process.env.REACT_APP_BASE_URL}${
               imagesOfWines.find((w) => w.id === wineId)?.image
@@ -78,18 +90,18 @@ export const SeoWine = ({ wine, wineId }: ISeoProps) => {
               bestRating: "5",
               worstRating: "4",
             },
-            author: { "@type": "Person", name: "Salvatore De Rosa" },
+            author: { "@type": "Person", name: "Salvatore" },
           },
           audience: {
             "@type": "Audience",
-            name: "wine lovers",
+            name: "wine lovers - restaurants - business",
           },
           category: "Alcohol, Wines",
           countryOfAssembly: "Italy",
           countryOfOrigin: {
             address: "Italy",
           },
-          keywords: wine.type,
+          keywords: `${wine.id} ${wine.type} Wine Sydney Marche Italy Italian Australia Luxury Liquor Local Restaurant Wine Importer Apollonia Flora Campo di Cuori Contatto Extra Brut Isola Lacrima Millesimato Opere Suono Urbano`,
           url: `${process.env.REACT_APP_BASE_URL}/wines/${wine.id}/`,
         })}
       </script>

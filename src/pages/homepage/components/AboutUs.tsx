@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MaxWidthComponent } from "../../../components/common/MaxWidthComponent";
-import aboutusPic from "../../../assets/images/about-us.webp";
+import aboutusPic from "../../../assets/images/wine of marche about us.webp";
 import { sectiontitleLighter } from "../../../components/common/colors";
 
 const AboutUsStyle = styled.div.attrs({

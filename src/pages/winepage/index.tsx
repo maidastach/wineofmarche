@@ -5,7 +5,7 @@ import { MaxWidthComponent } from "../../components/common/MaxWidthComponent";
 import winelist from "../../data/data-wines.json";
 import { RelatedProducts } from "./RelatedProducts";
 import { WineCard } from "./WineCard";
-import wineBgPic from "../../assets/images/winebg.jpg";
+import wineBgPic from "../../assets/images/wine of marche wine.jpg";
 import { SeoWine } from "../../components/seo/SeoWine";
 
 const WinePageStyle = styled.section`
@@ -15,7 +15,7 @@ const WinePageStyle = styled.section`
 
   .winepage-content {
     padding-bottom: 3rem;
-    background-image: url(${wineBgPic});
+    background-image: url("${wineBgPic}");
     background-color: #000000b0;
     background-blend-mode: soft-light;
     background-position: center;

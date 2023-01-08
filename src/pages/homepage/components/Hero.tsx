@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heropic from "../../../assets/images/hero3.jpeg";
+import heropic from "../../../assets/images/wine of marche hero.jpeg";
 
 const HeroStyle = styled.div.attrs({ className: "hero-container" })`
   display: flex;

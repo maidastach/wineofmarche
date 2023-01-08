@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logotext from "../../../assets/images/logotext.png";
+import logotext from "../../../assets/images/wine of marche logo text.png";
 import { MobileNavbar } from "./MobileNavbar";
 import { DesktopNavbar } from "./DesktopNavbar";
 import { Link, useLocation } from "react-router-dom";

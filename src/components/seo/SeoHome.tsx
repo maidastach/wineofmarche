@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import logoPic from "../../assets/images/logopics.png";
+import logoPic from "../../assets/images/wine of marche logo.png";
 
 export const SeoHome = () => {
   return (
@@ -19,21 +19,28 @@ export const SeoHome = () => {
       </script>
 
       {/* META TAGS */}
-      <title>Wine of Marche</title>
-      <link rel="canonical" href={`${process.env.REACT_APP_BASE_URL}/`} />
-      <meta property="og:title" content="Wine of Marche" />
+      <title>Wine of Marche | Italian Wine Import Company</title>
+      <link rel="canonical" href="https://wineofmarche.au/" />
+      <meta
+        property="og:title"
+        content="Wine of Marche | Italian Wine Import Company"
+      />
       <meta
         name="description"
-        content="Bringing exclusive Italian wine from the Marche region to the best fine dining restaurant in Australia"
+        content="Rare and High Quality Italian Wines at wholesale price. Bringing exclusive Italian wine from the Marche region to the best fine dining restaurant in Australia"
       />
       <meta
         property="og:description"
-        content="Bringing exclusive Italian wine from the Marche region to the best fine dining restaurant in Australia"
+        content="Rare and High Quality Italian Wines at wholesale price. Bringing exclusive Italian wine from the Marche region to the best fine dining restaurant in Australia"
       />
-      <meta property="og:url" content={`${process.env.REACT_APP_BASE_URL}/`} />
+      <meta property="og:url" content="https://wineofmarche.au/" />
       <meta
         property="keywords"
-        content="Wine Sydney Marche Italy Italian Australia"
+        content="Wine Sydney Marche Italy Italian Australia Luxury Liquor Local Restaurant Wine Importer Apollonia Flora Campo di Cuori Contatto Extra Brut Isola Lacrima Millesimato Opere Suono Urbano Wine of Marche, Italian wine importer and supplier in Sydney - Lane Cove -
+        NSW. Buy wine online, Montepulciano, Sparkling Wine, Wine Shop, Italian
+        Wine, Wine Delivery, Wine Wholesale, Wine Wholesale with delivery, Vintage
+        Wine, Organic Wine, Online Wine Store, Prosecco, Verdicchio, Italian
+        Prosecco, Best Italian Wine, White Wine."
       />
       <meta property="og:type" content="LiquorStore" />
       <meta
@@ -72,7 +79,8 @@ export const SeoHome = () => {
             gender: "M",
             givenName: "Besar",
           },
-          keywords: "Wine Sydney Marche Italy Italian Australia",
+          keywords:
+            "Wine Sydney Marche Italy Italian Australia Luxury Liquor Local Restaurant Wine Importer Apollonia Flora Campo di Cuori Contatto Extra Brut Isola Lacrima Millesimato Opere Suono Urbano",
           knowsLanguage: "English, Italian",
           logo: `${process.env.REACT_APP_BASE_URL}${logoPic}`,
           url: `${process.env.REACT_APP_BASE_URL}/`,

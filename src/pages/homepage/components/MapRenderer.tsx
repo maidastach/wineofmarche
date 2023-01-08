@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import staticMapPic from "../../../assets/images/staticmap2.webp";
+import staticMapPic from "../../../assets/images/wine of marche static map.webp";
 import { winetitle } from "../../../components/common/colors";
 
 const MapStyle = styled.div.attrs({ className: "staticmap-container" })`
