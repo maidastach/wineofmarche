@@ -31,6 +31,21 @@
         "id": "vinification",
         "label": "Vinification and wine aging",
         "data": "The bunch of grapes gets softly and quickly pressed what permits to obtain 40% of must. The fermentation occurs at controlled temperature of 16°C. The wine againg in steel basins lasts 14 months. It takes place on noble wine lees which are mixed up with periodical batonnage."
+      },
+      "tasting": {
+        "id": "tasting",
+        "label": "Tasting Notes",
+        "data": "The Verdicchio in the sip presents itself as warm and enveloping like a red wine. Its excellent acidity and low pH are signatures of its identity as a great white wine. Persistent like few wines, it has a complexity in the mouth that is long and varied, as befitting a great wine. Years of aging in a vat and in the bottle give it roundness and fullness, resulting in a smooth and delicate drink."
+      },
+      "aroma": {
+        "id": "aroma",
+        "label": "Aroma",
+        "data": "Its aromatic complexity is very wide and varies over time. In the early years of its life, its aromas remind of peach, pineapple, lime, and hawthorn. Over time, these fruity aromas fade, giving way to honey, thyme, sage, almond, and camomile. Even further along in time, the aromatic picture becomes more complex, making room for incense, hazelnut, sulfur, wet stone, and passion fruit."
+      },
+      "appearance": {
+        "id": "appearance",
+        "label": "Appearance",
+        "data": "Yellow with green reflections, shiny and deep."
       }
     }
   },
@@ -136,6 +151,16 @@
         "id": "vinification",
         "label": "Vinification and wine aging",
         "data": "The fermentation of destemmed grapes occurs at controlled temperature of 25°C and a soaking period of 30 days. The wine ages in barrique for about 12 months and afterwards in bottles for 6 months."
+      },
+      "tasting": {
+        "id": "tasting",
+        "label": "Tasting Notes",
+        "data": "The Montepulciano dominates the small percentages of Merlot and Cabernet Sauvignon. In the mouth it is warm, silky, enveloping, and persistent. The tannin is soft but present to make the mouth clean and ready for the meal. The glycerin gives sweetness and fullness while the good acidity supports its structure."
+      },
+      "aroma": {
+        "id": "aroma",
+        "label": "Aroma",
+        "data": "The wide and straightforward aromatic range is determined by the red fruit of blackcurrant, cherry and dried plum that marry the mineral notes of tobacco, leather, pepper and nutmeg."
       }
     }
   },
@@ -345,7 +370,22 @@
       "vinification": {
         "id": "vinification",
         "label": "Vinification and wine aging",
-        "data": "The fermentation of the destemmed grapes takes place at a temperature of 23°C and a maceration period of about 20 days. The wine ages for about 4 months in stainless steel tanks with a subsequent refinement in the bottle for 2 months."
+        "data": "The grapes are hand-harvested with good ripeness dictated by slight withered in the vineyard, they ferment at a temperature of around 24 degrees with macerations lasting up to 40 days. Malolactic fermentation takes place during the maceration period when the liquid phase remains in contact with the grape skins and microbial activity is at its highest."
+      },
+      "tasting": {
+        "id": "tasting",
+        "label": "Tasting Notes",
+        "data": "The Lacrima di Moro d'Alba on the palate is fresh, balsamic with a moderate body and delicate tannins."
+      },
+      "aroma": {
+        "id": "aroma",
+        "label": "Aroma",
+        "data": "The aromatic components release scents of raspberry, blackcurrant and violet all accompanied by notes of moss and ginger."
+      },
+      "appearance": {
+        "id": "appearance",
+        "label": "Appearance",
+        "data": "The characteristic color of this grape variety is a deep red-violet, impenetrable and evocative."
       }
     }
   },

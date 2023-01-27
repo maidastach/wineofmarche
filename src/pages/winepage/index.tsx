@@ -116,13 +116,22 @@ const WinePageStyle = styled.section`
   @media only screen and (min-width: 768px) {
     .wine-container {
       row-gap: 4rem;
-      grid-template-columns: 3fr 2fr;
+      grid-template-columns: 4fr 3fr;
       grid-template-areas:
         "header header"
         "specs specs"
         "images description";
 
+      &.is-extended {
+        grid-template-rows: auto 95px auto;
+        grid-template-areas: none;
+      }
+
       .wine-header {
+        &.is-extended {
+          grid-column: 1 / 3;
+          grid-row: 1 / 2;
+        }
         h1 {
           text-align: center;
         }
@@ -130,6 +139,25 @@ const WinePageStyle = styled.section`
 
       .wine-description {
         margin-top: 0;
+        &.is-extended {
+          grid-column: 2 / 3;
+          grid-row: 2 / 4;
+        }
+      }
+
+      .wine-specs {
+        &.is-extended {
+          grid-column: 1 / 2;
+          grid-row: 2 / 2;
+        }
+      }
+
+      .wine-images {
+        &.is-extended {
+          margin-top: 10rem;
+          grid-column: 1 / 2;
+          grid-row: 3 / 4;
+        }
       }
     }
   }
@@ -142,7 +170,17 @@ const WinePageStyle = styled.section`
       }
     }
     .wine-container {
+      &.is-extended {
+        grid-template-rows: auto 180px auto;
+      }
       .wine-images {
+        &.is-extended {
+          margin-top: 5rem;
+          img {
+            height: 550px;
+            max-height: 5 50px;
+          }
+        }
         img {
           height: auto;
           max-height: 550px;
